@@ -7,12 +7,9 @@ const menuToggle = $('#menu-responsive-back')
 
 iconMenu.on('click', function(event) {
 	event.preventDefault();
-	/* Act on the event */
 	$(this).toggleClass('active')
 	menuToggle.toggleClass('active')
 });
-
-
 
 linkItem.on('click', function(e) {
 	e.preventDefault()
@@ -22,10 +19,25 @@ linkItem.on('click', function(e) {
 
 const aboutTop = $('#about').scrollTop()
 
+$('.perfil-link').on('click', function(e){
+	e.preventDefault()
+	$('#registro').slideToggle()
+});
+
+$('.cerrar').on('click', function(e){
+	e.preventDefault()
+	$('#registro').slideToggle()
+});
+
+
 $(window).on('scroll', (e)=>{
 	console.log($(this).scrollTop())
 	console.log(aboutTop)
 });
+
+
+
+
 
 
 

@@ -20,6 +20,7 @@ body
 			span.bar4
 			span.bar5
 
+
 	#menu-responsive-back.menu-responsive-back
 		a(href="index.html", class="logo-wrapper")
 			img(src="img/avaluo-facil-logo-white.png", alt="", class="logo")
@@ -34,7 +35,7 @@ body
 				li.item-menu
 					a(href="#" class="link", onclick="$('[#packages]').animatescroll();" ) Paquetes
 				li.item-menu
-					a(href="perfil.html", class="link", ) Perfil
+					a(href="perfil.html", class="link-extern", id="perfil") Perfil
 				li.item-menu
 					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
 		nav.social-media
@@ -69,7 +70,7 @@ body
 					li.item-menu
 						a(href="", class="link", onclick="$('#packages').animatescroll();") Paquetes
 					li.item-menu
-						a(href="perfil.html", class="link") Perfil
+						a(href="#", class="link-ext perfil-link", id="perfil") Perfil
 					li.item-menu
 						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
 			nav.social-media
@@ -86,6 +87,23 @@ body
 		.logo-responsive#logo-responsive
 			img(src="img/avaluo-facil-logo.png", alt="")
 		.wrapper
+			section#registro.registro
+				.container.full-height
+					.row.full-height.justify-content-center.align-items-center
+						form(action="" class="col-lg-3")
+							h2 Ingresa a tu perfil
+							.form-group
+								input(type="text" class="form-control campo" placeholder="Usuario")
+							.form-group
+								input(type="password" class="form-control campo" placeholder="Password")
+							.form-group.text-center
+								input(type="submit" class="ingresar" value="ingresar")
+							.form-group
+								a(href="")
+							a(href="#" class="text-center" style="color: white; display: block") Olvidaste la contraseña
+							a(href="#" class="facebook-login") INGRESAR CON FACEBOOK
+					a(href="#" class="cerrar") 
+						i(class="far fa-times-circle")
 			section#slider.slider.section
 				#carouselExampleControls.carousel.slide(data-ride="carousel")
 					.carousel-inner
