@@ -1067,20 +1067,46 @@ section.slider .arrow i {
 }
 
 @media (max-width: 768px) {
-  /* line 672, sass/avaluo-styles.sass */
+  /* line 671, sass/avaluo-styles.sass */
+  section.slider .arrow .fa-arrow-left {
+    position: absolute;
+    bottom: 0px;
+    background: black;
+    padding: 20px;
+    color: white !important;
+    left: 0;
+    opacity: .85 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 680, sass/avaluo-styles.sass */
+  section.slider .arrow .fa-arrow-right {
+    position: absolute;
+    bottom: 0px;
+    background: black;
+    padding: 20px;
+    color: white !important;
+    right: 0;
+    opacity: .85 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 691, sass/avaluo-styles.sass */
   section.about {
     height: 130vh;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 672, sass/avaluo-styles.sass */
+  /* line 691, sass/avaluo-styles.sass */
   section.about {
     height: 240vh;
   }
 }
 
-/* line 677, sass/avaluo-styles.sass */
+/* line 696, sass/avaluo-styles.sass */
 section.about h2.title-quienes {
   font-family: 'roboto_condensedbold_italic';
   color: #8D8D8D;
@@ -1088,68 +1114,71 @@ section.about h2.title-quienes {
   text-align: center;
 }
 
-/* line 682, sass/avaluo-styles.sass */
+/* line 701, sass/avaluo-styles.sass */
 section.about h2.title-quienes span {
   color: red;
 }
 
-/* line 684, sass/avaluo-styles.sass */
+/* line 703, sass/avaluo-styles.sass */
 section.about p {
   color: #898989;
   text-align: justify;
+  font-size: 1em;
 }
 
-/* line 688, sass/avaluo-styles.sass */
+/* line 708, sass/avaluo-styles.sass */
 section.about ul li {
   color: #898989;
+  font-size: 1em;
 }
 
-/* line 690, sass/avaluo-styles.sass */
+/* line 711, sass/avaluo-styles.sass */
 section.about p.small {
   padding: 20px;
   background: #0066ad;
   color: white;
+  font-size: .7em;
 }
 
-/* line 694, sass/avaluo-styles.sass */
+/* line 716, sass/avaluo-styles.sass */
 section.about h2.info-important {
   margin: 0;
 }
 
-/* line 696, sass/avaluo-styles.sass */
+/* line 718, sass/avaluo-styles.sass */
 section.services {
   padding-top: 70px;
 }
 
 @media (max-width: 768px) {
-  /* line 696, sass/avaluo-styles.sass */
+  /* line 718, sass/avaluo-styles.sass */
   section.services {
     height: 220%;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 696, sass/avaluo-styles.sass */
+  /* line 718, sass/avaluo-styles.sass */
   section.services {
     padding-top: 10px;
-    height: 270vh;
+    height: 180vh;
   }
 }
 
-/* line 704, sass/avaluo-styles.sass */
+/* line 726, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section {
   height: 30%;
 }
 
 @media (max-width: 768px) {
-  /* line 704, sass/avaluo-styles.sass */
+  /* line 726, sass/avaluo-styles.sass */
   section.services .avaluo1 .title-section {
     margin-top: 50px;
     height: auto;
   }
 }
 
-/* line 709, sass/avaluo-styles.sass */
+/* line 731, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2 {
   font-family: 'roboto_condensedlight';
   text-transform: uppercase;
@@ -1159,7 +1188,7 @@ section.services .avaluo1 .title-section h2 {
   position: relative;
 }
 
-/* line 716, sass/avaluo-styles.sass */
+/* line 738, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2:after {
   content: '';
   position: absolute;
@@ -1169,20 +1198,29 @@ section.services .avaluo1 .title-section h2:after {
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  left: 28%;
+  left: 10%;
   top: 50%;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-@media (max-width: 556px) {
-  /* line 716, sass/avaluo-styles.sass */
+@media (max-width: 768px) {
+  /* line 738, sass/avaluo-styles.sass */
   section.services .avaluo1 .title-section h2:after {
-    left: 5%;
+    left: 20%;
   }
 }
 
-/* line 730, sass/avaluo-styles.sass */
+@media (max-width: 556px) {
+  /* line 738, sass/avaluo-styles.sass */
+  section.services .avaluo1 .title-section h2:after {
+    left: 5%;
+    width: 30px;
+    height: 60px;
+  }
+}
+
+/* line 756, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2:before {
   content: '';
   position: absolute;
@@ -1192,26 +1230,35 @@ section.services .avaluo1 .title-section h2:before {
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  right: 28%;
+  right: 10%;
   top: 50%;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-@media (max-width: 556px) {
-  /* line 730, sass/avaluo-styles.sass */
+@media (max-width: 768px) {
+  /* line 756, sass/avaluo-styles.sass */
   section.services .avaluo1 .title-section h2:before {
-    right: 5%;
+    right: 20%;
   }
 }
 
-/* line 744, sass/avaluo-styles.sass */
+@media (max-width: 556px) {
+  /* line 756, sass/avaluo-styles.sass */
+  section.services .avaluo1 .title-section h2:before {
+    right: 5%;
+    width: 30px;
+    height: 60px;
+  }
+}
+
+/* line 774, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2 .avaluo {
   font-size: 1.6em;
   color: #5A5A5A;
 }
 
-/* line 747, sass/avaluo-styles.sass */
+/* line 777, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2 .tipo {
   position: relative;
   font-family: 'roboto_condensedbold';
@@ -1219,7 +1266,7 @@ section.services .avaluo1 .title-section h2 .tipo {
   color: #0066ad;
 }
 
-/* line 752, sass/avaluo-styles.sass */
+/* line 782, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h3 {
   text-align: center;
   text-transform: uppercase;
@@ -1227,13 +1274,13 @@ section.services .avaluo1 .title-section h3 {
   margin-bottom: 40px;
 }
 
-/* line 757, sass/avaluo-styles.sass */
+/* line 787, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h3 span {
   color: #0066ad;
   font-family: 'roboto_condensedlight_italic';
 }
 
-/* line 760, sass/avaluo-styles.sass */
+/* line 790, sass/avaluo-styles.sass */
 section.services .avaluo1 .info {
   background: url(../../img/back-avaluo.jpg);
   background-position: top center;
@@ -1244,7 +1291,7 @@ section.services .avaluo1 .info {
 }
 
 @media (max-width: 768px) {
-  /* line 760, sass/avaluo-styles.sass */
+  /* line 790, sass/avaluo-styles.sass */
   section.services .avaluo1 .info {
     height: auto;
     padding: 40px;
@@ -1252,30 +1299,44 @@ section.services .avaluo1 .info {
 }
 
 @media (max-width: 556px) {
-  /* line 760, sass/avaluo-styles.sass */
+  /* line 790, sass/avaluo-styles.sass */
   section.services .avaluo1 .info {
     padding: 0px;
   }
 }
 
-/* line 772, sass/avaluo-styles.sass */
+/* line 802, sass/avaluo-styles.sass */
 section.services .avaluo1 .info p {
   color: #363636;
 }
 
-/* line 774, sass/avaluo-styles.sass */
+/* line 805, sass/avaluo-styles.sass */
 section.services .avaluo1 .info ul {
   margin-bottom: 30px;
 }
 
-/* line 776, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 805, sass/avaluo-styles.sass */
+  section.services .avaluo1 .info ul {
+    display: none;
+  }
+}
+
+/* line 809, sass/avaluo-styles.sass */
 section.services .avaluo1 .info ul li {
   font-family: 'roboto_condensedlight';
   color: #787878;
   text-align: justify;
 }
 
-/* line 780, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 809, sass/avaluo-styles.sass */
+  section.services .avaluo1 .info ul li {
+    font-size: .8em;
+  }
+}
+
+/* line 815, sass/avaluo-styles.sass */
 section.services .avaluo1 .info .boton {
   background: #0066ad;
   padding: 10px 30px;
@@ -1287,7 +1348,7 @@ section.services .avaluo1 .info .boton {
 }
 
 @media (max-width: 556px) {
-  /* line 780, sass/avaluo-styles.sass */
+  /* line 815, sass/avaluo-styles.sass */
   section.services .avaluo1 .info .boton {
     width: 100%;
     display: block;
@@ -1297,25 +1358,25 @@ section.services .avaluo1 .info .boton {
   }
 }
 
-/* line 794, sass/avaluo-styles.sass */
+/* line 829, sass/avaluo-styles.sass */
 section.services .avaluo1 .info .boton:hover {
   text-decoration: none;
 }
 
-/* line 797, sass/avaluo-styles.sass */
+/* line 832, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section {
   height: 30%;
 }
 
 @media (max-width: 768px) {
-  /* line 797, sass/avaluo-styles.sass */
+  /* line 832, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section {
     margin-top: 50px;
     height: auto;
   }
 }
 
-/* line 802, sass/avaluo-styles.sass */
+/* line 837, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2 {
   font-family: 'roboto_condensedlight';
   text-transform: uppercase;
@@ -1326,7 +1387,7 @@ section.services .avaluo2 .title-section h2 {
 }
 
 @media (max-width: 768px) {
-  /* line 802, sass/avaluo-styles.sass */
+  /* line 837, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2 {
     margin-top: 80px;
     height: auto;
@@ -1334,13 +1395,13 @@ section.services .avaluo2 .title-section h2 {
 }
 
 @media (max-width: 556px) {
-  /* line 802, sass/avaluo-styles.sass */
+  /* line 837, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2 {
     height: auto;
   }
 }
 
-/* line 814, sass/avaluo-styles.sass */
+/* line 849, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2:after {
   content: '';
   position: absolute;
@@ -1350,20 +1411,29 @@ section.services .avaluo2 .title-section h2:after {
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  left: 28%;
+  left: 10%;
   top: 50%;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-@media (max-width: 556px) {
-  /* line 814, sass/avaluo-styles.sass */
+@media (max-width: 768px) {
+  /* line 849, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2:after {
-    left: 5%;
+    left: 20%;
   }
 }
 
-/* line 828, sass/avaluo-styles.sass */
+@media (max-width: 556px) {
+  /* line 849, sass/avaluo-styles.sass */
+  section.services .avaluo2 .title-section h2:after {
+    left: 5%;
+    width: 30px;
+    height: 60px;
+  }
+}
+
+/* line 867, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2:before {
   content: '';
   position: absolute;
@@ -1373,33 +1443,42 @@ section.services .avaluo2 .title-section h2:before {
   background-size: 100% auto;
   background-position: center;
   background-repeat: no-repeat;
-  right: 28%;
+  right: 10%;
   top: 50%;
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
 }
 
-@media (max-width: 556px) {
-  /* line 828, sass/avaluo-styles.sass */
+@media (max-width: 768px) {
+  /* line 867, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2:before {
-    right: 5%;
+    right: 20%;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 802, sass/avaluo-styles.sass */
+  /* line 867, sass/avaluo-styles.sass */
+  section.services .avaluo2 .title-section h2:before {
+    right: 5%;
+    width: 30px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 837, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2 {
     margin-top: 40px;
   }
 }
 
-/* line 844, sass/avaluo-styles.sass */
+/* line 887, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2 .avaluo {
   font-size: 1.6em;
   color: #5A5A5A;
 }
 
-/* line 847, sass/avaluo-styles.sass */
+/* line 890, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2 .tipo {
   position: relative;
   font-family: 'roboto_condensedbold';
@@ -1407,7 +1486,7 @@ section.services .avaluo2 .title-section h2 .tipo {
   color: red;
 }
 
-/* line 852, sass/avaluo-styles.sass */
+/* line 895, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h3 {
   text-align: center;
   text-transform: uppercase;
@@ -1415,13 +1494,13 @@ section.services .avaluo2 .title-section h3 {
   margin-bottom: 40px;
 }
 
-/* line 857, sass/avaluo-styles.sass */
+/* line 900, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h3 span {
   color: red;
   font-family: 'roboto_condensedlight_italic';
 }
 
-/* line 860, sass/avaluo-styles.sass */
+/* line 903, sass/avaluo-styles.sass */
 section.services .avaluo2 .info {
   background: url(../../img/back-avaluo.jpg);
   background-position: top center;
@@ -1432,7 +1511,7 @@ section.services .avaluo2 .info {
 }
 
 @media (max-width: 768px) {
-  /* line 860, sass/avaluo-styles.sass */
+  /* line 903, sass/avaluo-styles.sass */
   section.services .avaluo2 .info {
     height: auto;
     padding: 40px;
@@ -1440,29 +1519,43 @@ section.services .avaluo2 .info {
 }
 
 @media (max-width: 556px) {
-  /* line 860, sass/avaluo-styles.sass */
+  /* line 903, sass/avaluo-styles.sass */
   section.services .avaluo2 .info {
     padding: 0px;
   }
 }
 
-/* line 872, sass/avaluo-styles.sass */
+/* line 915, sass/avaluo-styles.sass */
 section.services .avaluo2 .info p {
   color: #363636;
 }
 
-/* line 874, sass/avaluo-styles.sass */
+/* line 918, sass/avaluo-styles.sass */
 section.services .avaluo2 .info ul {
   margin-bottom: 30px;
 }
 
-/* line 876, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 918, sass/avaluo-styles.sass */
+  section.services .avaluo2 .info ul {
+    display: none;
+  }
+}
+
+/* line 922, sass/avaluo-styles.sass */
 section.services .avaluo2 .info ul li {
   font-family: 'roboto_condensedlight';
   color: #787878;
 }
 
-/* line 879, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 922, sass/avaluo-styles.sass */
+  section.services .avaluo2 .info ul li {
+    font-size: .8em;
+  }
+}
+
+/* line 927, sass/avaluo-styles.sass */
 section.services .avaluo2 .info .boton {
   background: red;
   padding: 10px 30px;
@@ -1474,7 +1567,7 @@ section.services .avaluo2 .info .boton {
 }
 
 @media (max-width: 556px) {
-  /* line 879, sass/avaluo-styles.sass */
+  /* line 927, sass/avaluo-styles.sass */
   section.services .avaluo2 .info .boton {
     width: 100%;
     display: block;
@@ -1484,36 +1577,43 @@ section.services .avaluo2 .info .boton {
   }
 }
 
-/* line 893, sass/avaluo-styles.sass */
+/* line 941, sass/avaluo-styles.sass */
 section.services .avaluo2 .info .boton:hover {
   text-decoration: none;
 }
 
-/* line 895, sass/avaluo-styles.sass */
+/* line 943, sass/avaluo-styles.sass */
 section.packages {
   background: url(../../img/background.jpg);
 }
 
-@media (max-width: 556px) {
-  /* line 895, sass/avaluo-styles.sass */
+@media (max-width: 768px) {
+  /* line 943, sass/avaluo-styles.sass */
   section.packages {
-    height: 240vh;
+    height: 100vh;
   }
 }
 
-/* line 899, sass/avaluo-styles.sass */
+@media (max-width: 556px) {
+  /* line 943, sass/avaluo-styles.sass */
+  section.packages {
+    height: 180vh;
+  }
+}
+
+/* line 949, sass/avaluo-styles.sass */
 section.packages .titulo {
   padding: 100px;
 }
 
 @media (max-width: 768px) {
-  /* line 899, sass/avaluo-styles.sass */
+  /* line 949, sass/avaluo-styles.sass */
   section.packages .titulo {
     padding: 30px;
   }
 }
 
-/* line 903, sass/avaluo-styles.sass */
+/* line 953, sass/avaluo-styles.sass */
 section.packages .package-column {
   width: 50%;
   float: left;
@@ -1521,13 +1621,13 @@ section.packages .package-column {
 }
 
 @media (max-width: 556px) {
-  /* line 903, sass/avaluo-styles.sass */
+  /* line 953, sass/avaluo-styles.sass */
   section.packages .package-column {
     width: 100%;
   }
 }
 
-/* line 909, sass/avaluo-styles.sass */
+/* line 959, sass/avaluo-styles.sass */
 section.packages h2 {
   font-family: 'roboto_condensedbold_italic';
   color: #0066ad;
@@ -1536,14 +1636,21 @@ section.packages h2 {
   position: relative;
 }
 
+@media (max-width: 1366px) {
+  /* line 959, sass/avaluo-styles.sass */
+  section.packages h2 {
+    font-size: 2.2em;
+  }
+}
+
 @media (max-width: 768px) {
-  /* line 909, sass/avaluo-styles.sass */
+  /* line 959, sass/avaluo-styles.sass */
   section.packages h2 {
     text-align: center;
   }
 }
 
-/* line 917, sass/avaluo-styles.sass */
+/* line 969, sass/avaluo-styles.sass */
 section.packages h2 span {
   position: relative;
   color: #717171;
@@ -1551,7 +1658,7 @@ section.packages h2 span {
   display: block;
 }
 
-/* line 922, sass/avaluo-styles.sass */
+/* line 974, sass/avaluo-styles.sass */
 section.packages h2:after {
   content: '';
   width: 200px;
@@ -1563,7 +1670,7 @@ section.packages h2:after {
 }
 
 @media (max-width: 768px) {
-  /* line 922, sass/avaluo-styles.sass */
+  /* line 974, sass/avaluo-styles.sass */
   section.packages h2:after {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1571,7 +1678,7 @@ section.packages h2:after {
   }
 }
 
-/* line 933, sass/avaluo-styles.sass */
+/* line 985, sass/avaluo-styles.sass */
 section.packages h2:before {
   content: '';
   width: 150px;
@@ -1583,7 +1690,7 @@ section.packages h2:before {
 }
 
 @media (max-width: 768px) {
-  /* line 933, sass/avaluo-styles.sass */
+  /* line 985, sass/avaluo-styles.sass */
   section.packages h2:before {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -1591,12 +1698,19 @@ section.packages h2:before {
   }
 }
 
-/* line 944, sass/avaluo-styles.sass */
+/* line 996, sass/avaluo-styles.sass */
 section.packages .card-header {
   border-bottom: 4px solid #757575;
 }
 
-/* line 946, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 996, sass/avaluo-styles.sass */
+  section.packages .card-header {
+    padding: 3px;
+  }
+}
+
+/* line 1000, sass/avaluo-styles.sass */
 section.packages .card-header .card-title {
   font-family: 'roboto_condensedbold';
   text-transform: uppercase;
@@ -1604,17 +1718,33 @@ section.packages .card-header .card-title {
   color: #626262;
 }
 
-/* line 951, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 1000, sass/avaluo-styles.sass */
+  section.packages .card-header .card-title {
+    font-size: 1.3em;
+    padding: 5px;
+    margin-bottom: 0;
+  }
+}
+
+/* line 1009, sass/avaluo-styles.sass */
 section.packages .card-header .card-subtitle {
   color: #747474;
 }
 
-/* line 953, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 1009, sass/avaluo-styles.sass */
+  section.packages .card-header .card-subtitle {
+    font-size: 1em;
+  }
+}
+
+/* line 1013, sass/avaluo-styles.sass */
 section.packages .card-body {
   padding-bottom: 0;
 }
 
-/* line 955, sass/avaluo-styles.sass */
+/* line 1015, sass/avaluo-styles.sass */
 section.packages .card-body .boton {
   border-radius: 10px;
   border-bottom-right-radius: 0;
@@ -1627,63 +1757,77 @@ section.packages .card-body .boton {
   text-transform: uppercase;
 }
 
-/* line 965, sass/avaluo-styles.sass */
+/* line 1025, sass/avaluo-styles.sass */
 section.packages .card-body .boton:hover {
   background: #434343;
   padding: 10px 50px;
 }
 
-/* line 969, sass/avaluo-styles.sass */
+/* line 1029, sass/avaluo-styles.sass */
 section.packages .card-body ul {
   padding: 0;
 }
 
-/* line 971, sass/avaluo-styles.sass */
+/* line 1031, sass/avaluo-styles.sass */
 section.packages .card-body ul li {
   list-style: none;
   border-bottom: 2px solid #5599c8;
   line-height: 60px;
 }
 
-/* line 975, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 1031, sass/avaluo-styles.sass */
+  section.packages .card-body ul li {
+    line-height: 30px;
+  }
+}
+
+/* line 1037, sass/avaluo-styles.sass */
 section.packages .card-body .card-text {
   text-transform: uppercase;
   font-size: 1.2em;
 }
 
-@media (max-width: 768px) {
-  /* line 975, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 1037, sass/avaluo-styles.sass */
   section.packages .card-body .card-text {
     font-size: .8em;
   }
 }
 
-/* line 980, sass/avaluo-styles.sass */
+@media (max-width: 768px) {
+  /* line 1037, sass/avaluo-styles.sass */
+  section.packages .card-body .card-text {
+    font-size: .8em;
+  }
+}
+
+/* line 1044, sass/avaluo-styles.sass */
 section.packages .card-body .card-text .column {
   width: 50%;
   float: left;
   padding: 0 15px;
 }
 
-/* line 985, sass/avaluo-styles.sass */
+/* line 1049, sass/avaluo-styles.sass */
 section.packages .card-body .card-text .price {
   font-family: 'roboto_condensedbold';
   color: #616161;
 }
 
 @media (max-width: 556px) {
-  /* line 988, sass/avaluo-styles.sass */
+  /* line 1052, sass/avaluo-styles.sass */
   section.contacto {
-    height: 200%;
+    height: 200vh;
   }
 }
 
-/* line 991, sass/avaluo-styles.sass */
+/* line 1055, sass/avaluo-styles.sass */
 section.contacto .form-container {
   padding: 40px;
 }
 
-/* line 993, sass/avaluo-styles.sass */
+/* line 1057, sass/avaluo-styles.sass */
 section.contacto .form-container h2 {
   text-align: center;
   text-transform: uppercase;
@@ -1691,40 +1835,66 @@ section.contacto .form-container h2 {
   color: #727272;
 }
 
-/* line 998, sass/avaluo-styles.sass */
+@media (max-width: 1366px) {
+  /* line 1057, sass/avaluo-styles.sass */
+  section.contacto .form-container h2 {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 1057, sass/avaluo-styles.sass */
+  section.contacto .form-container h2 {
+    font-size: 1.6em;
+  }
+}
+
+/* line 1066, sass/avaluo-styles.sass */
 section.contacto .form-container h2 span {
   color: #4A7DDB;
   font-size: 1.3em;
 }
 
-/* line 1001, sass/avaluo-styles.sass */
+/* line 1069, sass/avaluo-styles.sass */
 section.contacto .form-container form {
   width: 100%;
 }
 
-/* line 1003, sass/avaluo-styles.sass */
+/* line 1071, sass/avaluo-styles.sass */
 section.contacto .form-container form .campo {
   border: 2px solid #4494BE;
 }
 
-/* line 1005, sass/avaluo-styles.sass */
+/* line 1073, sass/avaluo-styles.sass */
 section.contacto .form-container form .campo:focus {
   outline: 0px;
   box-shadow: none;
   border: 2px solid #404040;
 }
 
-/* line 1009, sass/avaluo-styles.sass */
+/* line 1077, sass/avaluo-styles.sass */
 section.contacto .form-container form .btn {
   border: none;
 }
 
-/* line 1011, sass/avaluo-styles.sass */
+/* line 1079, sass/avaluo-styles.sass */
 section.contacto .form-container form .btn:hover {
   background: #4A7DDB;
 }
 
-/* line 1013, sass/avaluo-styles.sass */
+/* line 1081, sass/avaluo-styles.sass */
+section.contacto p {
+  font-size: 1em;
+}
+
+@media (max-width: 1366px) {
+  /* line 1081, sass/avaluo-styles.sass */
+  section.contacto p {
+    font-size: .8em;
+  }
+}
+
+/* line 1085, sass/avaluo-styles.sass */
 section.contacto i {
   font-size: 2em;
   display: inline-block;
@@ -1733,7 +1903,7 @@ section.contacto i {
   color: #595959;
 }
 
-/* line 1019, sass/avaluo-styles.sass */
+/* line 1091, sass/avaluo-styles.sass */
 section.contacto .photo {
   height: 100vh;
   background-image: url(../../img/contacto2.jpg);
@@ -1741,7 +1911,7 @@ section.contacto .photo {
   background-repeat: no-repeat;
 }
 
-/* line 1025, sass/avaluo-styles.sass */
+/* line 1097, sass/avaluo-styles.sass */
 section.contacto .photo h2 {
   text-transform: uppercase;
   font-family: 'roboto_condensedbold';
@@ -1750,25 +1920,25 @@ section.contacto .photo h2 {
   display: inline-block;
 }
 
-/* line 1031, sass/avaluo-styles.sass */
+/* line 1103, sass/avaluo-styles.sass */
 section.contacto .photo h2 a {
   color: white;
   transition: .2s;
 }
 
-/* line 1034, sass/avaluo-styles.sass */
+/* line 1106, sass/avaluo-styles.sass */
 section.contacto .photo h2 a:hover {
   text-decoration: none;
   padding: 10px 40px;
 }
 
-/* line 1038, sass/avaluo-styles.sass */
+/* line 1110, sass/avaluo-styles.sass */
 section.footer {
   height: 100%;
   position: relative;
 }
 
-/* line 1041, sass/avaluo-styles.sass */
+/* line 1113, sass/avaluo-styles.sass */
 section.footer h2.aliados {
   font-family: 'roboto_condensedbold_italic';
   text-transform: uppercase;
@@ -1777,18 +1947,18 @@ section.footer h2.aliados {
 }
 
 @media (max-width: 556px) {
-  /* line 1041, sass/avaluo-styles.sass */
+  /* line 1113, sass/avaluo-styles.sass */
   section.footer h2.aliados {
     padding-top: 50px;
   }
 }
 
-/* line 1048, sass/avaluo-styles.sass */
+/* line 1120, sass/avaluo-styles.sass */
 section.footer h2.aliados span {
   color: #707070;
 }
 
-/* line 1050, sass/avaluo-styles.sass */
+/* line 1122, sass/avaluo-styles.sass */
 section.footer .logos {
   width: 90%;
   height: auto;
@@ -1797,13 +1967,13 @@ section.footer .logos {
 }
 
 @media (max-width: 556px) {
-  /* line 1050, sass/avaluo-styles.sass */
+  /* line 1122, sass/avaluo-styles.sass */
   section.footer .logos {
     margin: 30px auto;
   }
 }
 
-/* line 1057, sass/avaluo-styles.sass */
+/* line 1129, sass/avaluo-styles.sass */
 section.footer .footer-content {
   background: #353535;
   padding: 50px;
@@ -1812,7 +1982,7 @@ section.footer .footer-content {
   width: 100%;
 }
 
-/* line 1063, sass/avaluo-styles.sass */
+/* line 1135, sass/avaluo-styles.sass */
 section.footer .footer-content:after {
   content: '';
   position: absolute;
@@ -1830,38 +2000,138 @@ section.footer .footer-content:after {
           transform: translateX(-50%);
 }
 
-/* line 1077, sass/avaluo-styles.sass */
+/* line 1149, sass/avaluo-styles.sass */
 section.footer strong {
   color: white;
 }
 
-/* line 1079, sass/avaluo-styles.sass */
+/* line 1151, sass/avaluo-styles.sass */
 section.footer p {
   color: #B2B2B2;
 }
 
-/* line 1081, sass/avaluo-styles.sass */
+/* line 1153, sass/avaluo-styles.sass */
 section.footer ul {
   padding: 0;
   padding-left: 10px;
 }
 
-/* line 1084, sass/avaluo-styles.sass */
+/* line 1156, sass/avaluo-styles.sass */
 section.footer ul li {
   list-style: none;
 }
 
-/* line 1086, sass/avaluo-styles.sass */
+/* line 1158, sass/avaluo-styles.sass */
 section.footer ul li a {
   color: #B2B2B2;
 }
 
-/* line 1088, sass/avaluo-styles.sass */
+/* line 1160, sass/avaluo-styles.sass */
 section.footer ul li a:hover {
   text-decoration: none;
 }
 
-/* line 1091, sass/avaluo-styles.sass */
+/* line 1163, sass/avaluo-styles.sass */
 section.checkout {
   background: url(../../img/background.jpg);
+  padding: 0;
+}
+
+@media (max-width: 556px) {
+  /* line 1163, sass/avaluo-styles.sass */
+  section.checkout {
+    height: 200vh;
+  }
+}
+
+/* line 1168, sass/avaluo-styles.sass */
+section.checkout h1.informacion1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+/* line 1172, sass/avaluo-styles.sass */
+section.checkout h2.informacion {
+  color: #0066ad;
+  text-shadow: none;
+  margin: 0;
+}
+
+/* line 1177, sass/avaluo-styles.sass */
+section.checkout h2.informacion span {
+  color: #9D9D9D;
+  font-size: .86em;
+}
+
+/* line 1180, sass/avaluo-styles.sass */
+section.checkout h2 {
+  font-family: 'roboto_condensedbold';
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+}
+
+/* line 1187, sass/avaluo-styles.sass */
+section.checkout .table-checkout {
+  font-family: 'roboto_condensedlight';
+}
+
+/* line 1189, sass/avaluo-styles.sass */
+section.checkout .btn-dark {
+  width: 100%;
+}
+
+/* line 1191, sass/avaluo-styles.sass */
+section.checkout .comprar {
+  background-image: url(../../img/contacto2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* line 1196, sass/avaluo-styles.sass */
+section.checkout .order {
+  height: 100vh;
+}
+
+@media (max-width: 556px) {
+  /* line 1196, sass/avaluo-styles.sass */
+  section.checkout .order {
+    height: auto;
+  }
+}
+
+/* line 1201, sass/avaluo-styles.sass */
+section.checkout form .campo {
+  width: 100%;
+  border-radius: 15px;
+  text-align: center;
+  transition: .4s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  /* line 1201, sass/avaluo-styles.sass */
+  section.checkout form .campo {
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 1201, sass/avaluo-styles.sass */
+  section.checkout form .campo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* line 1214, sass/avaluo-styles.sass */
+section.checkout form .campo:focus {
+  outline: 0;
+  box-shadow: none;
+  border: 1px solid red;
 }

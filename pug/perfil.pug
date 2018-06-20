@@ -2,7 +2,7 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
-	title Avalúo fácil - checkout
+	title Avalúo fácil - Perfil
 	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 	//Icons
 	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" )
@@ -28,7 +28,7 @@ body
 				li.item-menu
 					a(href="index.html" class="link", onclick="$('[#home]').animatescroll();") Inicio
 				li.item-menu
-					a(href="perfil.html", class="link", ) Perfil
+					a(href="perfil.html", class="link active", ) Perfil
 				li.item-menu
 					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
 		nav.social-media
@@ -57,7 +57,7 @@ body
 					li.item-menu
 						a(href="index.html", class="link") Inicio
 					li.item-menu
-						a(href="perfil.html", class="link") Perfil
+						a(href="perfil.html", class="link active") Perfil
 					li.item-menu
 						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
 			nav.social-media
@@ -75,72 +75,8 @@ body
 			img(src="img/avaluo-facil-logo.png", alt="")
 		.wrapper
 			section#checkout.checkout.section
-				form(action="send" method="post" class="full-height" style="display: block")
-					.row.full-height.align-items-center
-						.col-lg-6
-							.row.justify-center
-								.col-lg-12
-									h2.informacion
-										| Checkout
-										br
-										span Información adicional
-									p.text-center Completa estos datos para finalizar la compra
-									.row(style="margin:10px 0")
-										.col-lg-4
-											input(type="text" placeholder="Nombre" class="form-control campo")
-										.col-lg-4
-											input(type="text" placeholder="Apellidos" class="form-control campo")
-										.col-lg-4
-											input(type="text" placeholder="Compañia" class="form-control campo")
-									.row(style="margin:10px 0")
-										.col-lg-4
-											input(type="text" placeholder="Ciudad" class="form-control campo")
-										.col-lg-4
-											input(type="text" placeholder="Dirección" class="form-control campo")
-										.col-lg-4
-											input(type="text" placeholder="Barrio" class="form-control campo")
-									.row(style="margin:10px 0")
-										.col-lg-4
-											input(type="text" placeholder="Teléfono" class="form-control campo")
-										.col-lg-4
-											input(type="e-mail" placeholder="E-mail" class="form-control campo")
-									.row(style="margin: 10px 0")
-										.col-lg-12
-											textarea(class="form-control" placeholder="Información adicional")
-									.row(style="margin: 20px 0")
-										.col-lg-12.text-center
-											label.for-check-label 
-												input(type="checkbox")
-												|  ¿Quieres crear una cuenta?
-						.col-lg-6.full-height.comprar
-							.row.order.align-items-center.justify-content-center
-								.table-responsive.col-lg-8
-									table(class="table table-hover table-dark table-checkout")
-										h2 Tu orden
-										thead(class="thead-dark")
-											tr
-												th(scope="col") PRODUCTO
-												th(scope="col") TIPO DE AVALÚO
-												th(scope="col") TOTAL
-											tbody
-												tr
-													th(scope="row")  Avalúo 1
-													td Certificado
-													td $300.000
-														
-												tr
-													th(scope="row")  Avalúo 1
-													td Informativo
-													td $300.000
-														
-												tr(class="table-dark")
-													th(scope="row") SUBTOTAL
-													td(colspan="2" class="text-center" style="background-color: white; color: gray") $600.000
-												tr
-									input(type="submit" value="FINALIZAR LA COMPRA" class="btn btn-dark")
 
-
-			section#contacto.contacto.section(style="display: none")
+			section#contacto.contacto.section
 				.row.full-height.align-items-center
 					.col-lg-6.form-container
 						h2 
@@ -152,7 +88,7 @@ body
 							.row
 								.col-lg-6
 									.form-group
-										input(type="text" placeholder="Nombre Completo" class="form-control campo")
+										input(type="text" placeholder="Nombre" class="form-control campo")
 								.col-lg-6
 									.form-group
 										input(type="email" placeholder="E-mail" class="form-control campo")

@@ -2,7 +2,7 @@
 <html lang="en"></html>
 <head>
   <meta charset="UTF-8"/>
-  <title>Avalúo fácil - checkout</title>
+  <title>Avalúo fácil - Perfil</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <!--Icons-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
@@ -19,7 +19,7 @@
     <nav>
       <ul class="menu-container">
         <li class="item-menu"><a class="link" href="index.html" onclick="$('[#home]').animatescroll();">Inicio</a></li>
-        <li class="item-menu"><a class="link" href="perfil.html">Perfil</a></li>
+        <li class="item-menu"><a class="link active" href="perfil.html">Perfil</a></li>
         <li class="item-menu"><a class="link" href="#" onclick="$('[#contact]').animatescroll();">Contácto</a></li>
       </ul>
     </nav>
@@ -36,7 +36,7 @@
       <nav>
         <ul class="menu-container">
           <li class="item-menu"><a class="link" href="index.html">Inicio</a></li>
-          <li class="item-menu"><a class="link" href="perfil.html">Perfil</a></li>
+          <li class="item-menu"><a class="link active" href="perfil.html">Perfil</a></li>
           <li class="item-menu"><a class="link" href="" onclick="$('#contacto').animatescroll();">Contácto</a></li>
         </ul>
       </nav>
@@ -50,97 +50,8 @@
     </div>
     <div class="logo-responsive" id="logo-responsive"><img src="img/avaluo-facil-logo.png" alt=""/></div>
     <div class="wrapper">
-      <section class="checkout section" id="checkout">
-        <form class="full-height" action="send" method="post" style="display: block">
-          <div class="row full-height align-items-center">
-            <div class="col-lg-6">
-              <div class="row justify-center">
-                <div class="col-lg-12">
-                  <h2 class="informacion">Checkout<br/><span>Información adicional</span></h2>
-                  <p class="text-center">Completa estos datos para finalizar la compra</p>
-                  <div class="row" style="margin:10px 0">
-                    <div class="col-lg-4">
-                      <input class="form-control campo" type="text" placeholder="Nombre"/>
-                    </div>
-                    <div class="col-lg-4">
-                      <input class="form-control campo" type="text" placeholder="Apellidos"/>
-                    </div>
-                    <div class="col-lg-4">
-                      <input class="form-control campo" type="text" placeholder="Compañia"/>
-                    </div>
-                  </div>
-                  <div class="row" style="margin:10px 0">
-                    <div class="col-lg-4">
-                      <input class="form-control campo" type="text" placeholder="Ciudad"/>
-                    </div>
-                    <div class="col-lg-4">
-                      <input class="form-control campo" type="text" placeholder="Dirección"/>
-                    </div>
-                    <div class="col-lg-4">
-                      <input class="form-control campo" type="text" placeholder="Barrio"/>
-                    </div>
-                  </div>
-                  <div class="row" style="margin:10px 0">
-                    <div class="col-lg-4">
-                      <input class="form-control campo" type="text" placeholder="Teléfono"/>
-                    </div>
-                    <div class="col-lg-4">
-                      <input class="form-control campo" type="e-mail" placeholder="E-mail"/>
-                    </div>
-                  </div>
-                  <div class="row" style="margin: 10px 0">
-                    <div class="col-lg-12">
-                      <textarea class="form-control" placeholder="Información adicional"></textarea>
-                    </div>
-                  </div>
-                  <div class="row" style="margin: 20px 0">
-                    <div class="col-lg-12 text-center">
-                      <label class="for-check-label"> 
-                        <input type="checkbox"/> ¿Quieres crear una cuenta?
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 full-height comprar">
-              <div class="row order align-items-center justify-content-center">
-                <div class="table-responsive col-lg-8">
-                  <table class="table table-hover table-dark table-checkout">
-                    <h2>Tu orden</h2>
-                    <thead class="thead-dark">
-                      <tr>
-                        <th scope="col">PRODUCTO</th>
-                        <th scope="col">TIPO DE AVALÚO</th>
-                        <th scope="col">TOTAL</th>
-                      </tr>
-                      <tbody>
-                        <tr>
-                          <th scope="row"> Avalúo 1</th>
-                          <td>Certificado</td>
-                          <td>$300.000</td>
-                        </tr>
-                        <tr>
-                          <th scope="row"> Avalúo 1</th>
-                          <td>Informativo</td>
-                          <td>$300.000</td>
-                        </tr>
-                        <tr class="table-dark">
-                          <th scope="row">SUBTOTAL</th>
-                          <td class="text-center" colspan="2" style="background-color: white; color: gray">$600.000</td>
-                        </tr>
-                        <tr></tr>
-                      </tbody>
-                    </thead>
-                  </table>
-                  <input class="btn btn-dark" type="submit" value="FINALIZAR LA COMPRA"/>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </section>
-      <section class="contacto section" id="contacto" style="display: none">
+      <section class="checkout section" id="checkout"></section>
+      <section class="contacto section" id="contacto">
         <div class="row full-height align-items-center">
           <div class="col-lg-6 form-container">
             <h2>
@@ -150,7 +61,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input class="form-control campo" type="text" placeholder="Nombre Completo"/>
+                    <input class="form-control campo" type="text" placeholder="Nombre"/>
                   </div>
                 </div>
                 <div class="col-lg-6">
