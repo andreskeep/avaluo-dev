@@ -82,6 +82,34 @@ body
 										| Checkout
 										br
 										span Información adicional
+									p.text-center Ubicación
+									.row(style="margin:10px 0")
+										.col-lg-4
+											select(name="estrato" class="form-control select" placeholder="Estrato")
+												option(value="" disabled selected) Tipo de inmueble
+												option(value="apartamento") Apartamento
+												option(value="apartamento") Casa
+										.col-lg-4
+											select(name="estrato" class="form-control select" placeholder="Ciudad")
+												option(value="" disabled selected) Ciudad
+												option(value="Bogotá") Bogotá
+										.col-lg-4
+											select(name="estrato" class="form-control select" placeholder="Ciudad")
+												option(value="" disabled selected) Localidad
+												option(value="Kennedy") Kennedy
+										.col-lg-4
+											select(name="estrato" class="form-control select" placeholder="Estrato")
+												option(value="" disabled selected) Estrato
+												option(value="1") 1
+												option(value="2") 2
+												option(value="3") 3
+												option(value="4") 4
+												option(value="5") 5
+												option(value="6") 6
+										.col-lg-8
+											input(type="text" placeholder="Dirección" class="form-control campo")
+										.col-lg-12
+											iframe(src="https://snazzymaps.com/embed/77933" width="100%" height="200px" style="border:none;")
 									p.text-center Datos del inmueble
 									.row(style="margin:10px 0")
 										.col-lg-4
@@ -138,7 +166,7 @@ body
 												|  ¿Quieres crear una cuenta?
 						.col-lg-6.full-height.comprar
 							.row.order.align-items-center.justify-content-center
-								.table-responsive.col-lg-8
+								.table-responsive.table-absolute.col-lg-8
 									table(class="table table-hover table-dark table-checkout")
 										h2 Tu orden
 										thead(class="thead-dark")

@@ -17,8 +17,6 @@ linkItem.on('click', function(e) {
 	$(this).parent().siblings('.item-menu').children('.link').removeClass('active')
 });
 
-const aboutTop = $('#about').scrollTop()
-
 $('.perfil-link').on('click', function(e){
 	e.preventDefault()
 	$('#registro').slideToggle()
