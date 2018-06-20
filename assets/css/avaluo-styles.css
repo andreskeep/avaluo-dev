@@ -2353,7 +2353,7 @@ section.footer ul li a:hover {
 section.checkout {
   background: url(../../img/background.jpg);
   padding: 0;
-  height: calc(150vh - 100px);
+  height: calc(130vh - 100px);
 }
 
 @media (max-width: 556px) {
@@ -2412,7 +2412,17 @@ section.checkout .comprar {
   background-repeat: no-repeat;
 }
 
-/* line 1424, sass/avaluo-styles.sass */
+/* line 1423, sass/avaluo-styles.sass */
+section.checkout .comprar .table-absolute {
+  position: fixed;
+  width: 500px;
+  top: 20%;
+  top-left: 50%;
+  top-transform: translate(-50%, -50%);
+  top-z-index: 100000000000;
+}
+
+/* line 1430, sass/avaluo-styles.sass */
 section.checkout .order {
   position: relative;
   width: 100%;
@@ -2420,13 +2430,13 @@ section.checkout .order {
 }
 
 @media (max-width: 556px) {
-  /* line 1424, sass/avaluo-styles.sass */
+  /* line 1430, sass/avaluo-styles.sass */
   section.checkout .order {
     height: auto;
   }
 }
 
-/* line 1431, sass/avaluo-styles.sass */
+/* line 1437, sass/avaluo-styles.sass */
 section.checkout form .campo {
   width: 100%;
   border-radius: 15px;
@@ -2436,7 +2446,7 @@ section.checkout form .campo {
 }
 
 @media (max-width: 768px) {
-  /* line 1431, sass/avaluo-styles.sass */
+  /* line 1437, sass/avaluo-styles.sass */
   section.checkout form .campo {
     width: 70%;
     height: 50px;
@@ -2446,21 +2456,21 @@ section.checkout form .campo {
 }
 
 @media (max-width: 556px) {
-  /* line 1431, sass/avaluo-styles.sass */
+  /* line 1437, sass/avaluo-styles.sass */
   section.checkout form .campo {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 1445, sass/avaluo-styles.sass */
+/* line 1451, sass/avaluo-styles.sass */
 section.checkout form .campo:focus {
   outline: 0;
   box-shadow: none;
   border: 1px solid red;
 }
 
-/* line 1449, sass/avaluo-styles.sass */
+/* line 1455, sass/avaluo-styles.sass */
 section.checkout form .select {
   margin-bottom: 20px;
   border-radius: 15px;
@@ -2470,7 +2480,7 @@ section.checkout form .select {
 }
 
 @media (max-width: 768px) {
-  /* line 1449, sass/avaluo-styles.sass */
+  /* line 1455, sass/avaluo-styles.sass */
   section.checkout form .select {
     width: 70%;
     height: 50px;
@@ -2480,27 +2490,27 @@ section.checkout form .select {
 }
 
 @media (max-width: 556px) {
-  /* line 1449, sass/avaluo-styles.sass */
+  /* line 1455, sass/avaluo-styles.sass */
   section.checkout form .select {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 1463, sass/avaluo-styles.sass */
+/* line 1469, sass/avaluo-styles.sass */
 section.checkout form .select:focus {
   outline: 0 !important;
   box-shadow: none;
   border: 1px solid red;
 }
 
-/* line 1467, sass/avaluo-styles.sass */
+/* line 1473, sass/avaluo-styles.sass */
 section.checkout form .select option {
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  /* line 1467, sass/avaluo-styles.sass */
+  /* line 1473, sass/avaluo-styles.sass */
   section.checkout form .select option {
     width: 100%;
   }

@@ -1387,7 +1387,7 @@ section.footer
 section.checkout
 	background: url(../../img/background.jpg)
 	padding: 0
-	height: calc(150vh - 100px)
+	height: calc(130vh - 100px)
 	@media(max-width:556px)
 		height: 300vh
 	& h1.informacion1
@@ -1421,6 +1421,12 @@ section.checkout
 			size: cover
 			repeat: no-repeat
 		& .table-absolute
+			position: fixed
+			width: 500px
+			top: 20%
+    		left: 50%
+    		transform: translate(-50%, -50%)
+    		z-index: 100000000000
 	.order
 		position: relative
 		width: 100%
