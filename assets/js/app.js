@@ -29,8 +29,6 @@ $('.cerrar').on('click', function(e){
 
 
 $(window).on('scroll', (e)=>{
-	console.log($(this).scrollTop())
-	console.log(aboutTop)
 });
 
 

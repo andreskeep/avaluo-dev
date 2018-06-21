@@ -57,6 +57,10 @@ body
 					li.item-menu
 						a(href="perfil.html", class="link") Perfil
 					li.item-menu
+						a(href="#", class="link-ext perfil-link", id="perfil") Ingresar
+					li.item-menu
+						a(href="registro.html", class="link-ext", id="register-form") Registrarse
+					li.item-menu
 						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
 			nav.social-media
 				ul
@@ -72,6 +76,24 @@ body
 		.logo-responsive#logo-responsive
 			img(src="img/avaluo-facil-logo.png", alt="")
 		.wrapper
+			section#registro.registro
+				.container.full-height
+					.row.full-height.justify-content-center.align-items-center
+						form(action="" class="col-lg-3")
+							h2 Ingresa a tu perfil
+							.form-group
+								input(type="text" class="form-control campo" placeholder="Usuario")
+							.form-group
+								input(type="password" class="form-control campo" placeholder="Password")
+							.form-group.text-center
+								input(type="submit" class="ingresar" value="INGRESAR")
+							.form-group
+								a(href="")
+							a(href="#" class="text-center" style="color: white; display: block") Olvidaste la contraseña
+							a(href="#" class="registro-user") REGISTRARME
+							a(href="#" class="facebook-login") INGRESAR CON FACEBOOK
+					a(href="#" class="cerrar") 
+						i(class="far fa-times-circle")
 			section#checkout.checkout.section
 				form(action="send" method="post" class="full-height" style="display: block")
 					.row.full-height
@@ -197,5 +219,5 @@ body
 	script(src="assets/js/bootstrap.min.js")
 	// Animate
 	script(src="assets/js/animatescroll.min.js")
-	// script(src="assets/js/app.js")
+	script(src="assets/js/app.js")
 	

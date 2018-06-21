@@ -28,7 +28,13 @@ body
 				li.item-menu
 					a(href="index.html" class="link", onclick="$('[#home]').animatescroll();") Volver al Inicio
 				li.item-menu
-					a(href="", class="link", onclick="$('#services').animatescroll();") Avalúos
+					a(href="", class="link", onclick="$('#perfil').animatescroll();") Perfil
+				li.item-menu
+					a(href="", class="link", onclick="$('#historial').animatescroll();") Historial
+				li.item-menu
+					a(href="", class="link", onclick="$('#services').animatescroll();") Calcular avalúo
+				li.item-menu
+					a(href="", class="link", onclick="$('#services').animatescroll();") Comprar Avalúos
 				li.item-menu
 					a(href="", class="link", onclick="$('#packages').animatescroll();") Paquetes
 				li.item-menu
@@ -54,14 +60,25 @@ body
 				img(src="img/avaluo-facil-logo-white.png", alt="", class="logo")
 			nav
 				ul.menu-container
+					p(style="color: white; text-transform: uppercase; background: #2D2D2D; padding: 7px") 
+						| Bienvenido 
+						strong Andres
 					li.item-menu
 						a(href="index.html", class="link-ext") Volver al Inicio
 					li.item-menu
-						a(href="", class="link", onclick="$('#services').animatescroll();") Avalúos
+						a(href="", class="link active", onclick="$('#slider').animatescroll();") Calculo rápido
+					li.item-menu
+						a(href="", class="link", onclick="$('#perfil').animatescroll();") Perfil
+					li.item-menu
+						a(href="", class="link", onclick="$('#historial').animatescroll();") Historial
+					li.item-menu
+						a(href="", class="link", onclick="$('#services').animatescroll();") Comprar avalúos
 					li.item-menu
 						a(href="", class="link", onclick="$('#packages').animatescroll();") Paquetes
 					li.item-menu
 						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
+					li.item-menu
+						a(href="", class="link", ) Cerrar sesión
 			nav.social-media
 				ul
 					li
@@ -76,6 +93,148 @@ body
 		.logo-responsive#logo-responsive
 			img(src="img/avaluo-facil-logo.png", alt="")
 		.wrapper
+			section#slider.slider.section
+				#carouselExampleControls.carousel.slide(data-ride="carousel")
+					.carousel-inner
+						.carousel-item.active.search
+							.row.justify-content-center.align-items-center.full-height
+								.col-lg-8.text-center
+									h3 LA PRIMER PLATAFORMA A
+									h2 NIVEL MUNDIAL
+										span QUE HACE TU AVALUO 100% ONLINE
+									h1 
+										span.one COTIZACIÓN 
+										span.two RÁPIDA
+									form(action="send.php", method="post", class="form-inline text-center form")
+										select(name="estrato" class="form-control select" placeholder="Estrato")
+											option(value="" disabled selected) Selecciona un estrato
+											option(value="1") Estrato 1
+											option(value="2") Estrato 2
+											option(value="3") Estrato 3
+											option(value="4") Estrato 4
+											option(value="5") Estrato 5
+											option(value="6") Estrato 6
+										select(name="finalidad" class="form-control select")
+											option(value="" disabled selected) Selecciona una finalidad
+											option(value="Avalúo informativo") Avalúo informativo
+											option(value="Avalúo informativo") Avalúo certificado
+										input(type="text" class="form-control campo" placeholder="Estrato" style="display: none")
+										input(type="text" class="form-control campo" placeholder="Finalidad" style="display: none")
+										input(type="text" class="form-control campo" placeholder="Área M2")
+										input(type="submit" class="form-control enviar", value="CALCULAR")
+
+									.result
+										span.valor $100'000.000
+										span.title-valor Resutado de la cotización
+
+									a(href="#" class="registrate") ¡Ingresa ya! obtén beneficios!
+
+					a.carousel-control-prev.arrow(href="#carouselExampleControls" role="button" data-slide="prev")
+						span
+							i(class="fa fa-arrow-left" aria-hidden="true")
+						span.sr-only Previous
+					a.carousel-control-next.arrow(href="#carouselExampleControls" role="button" data-slide="next")
+						span
+							i(class="fa fa-arrow-right" aria-hidden="true")
+						span.sr-only Next
+			section#perfil.perfil.section
+				.row.full-height.align-items-center.justify-content-center
+					.col-lg-6
+						h2 Perfil
+						p Esta es tu plataforma de avalúos, acá podrás hacer avalúos informativos, certificados, revisar tu historial y adquirir nuestros paquetes de avalúos a mejores costos.
+						p
+							strong Nombre:
+							|    Andres
+						p
+							strong Email:
+							|    andres@keepagencia.com
+						p
+							strong Documento:
+							|    1072543456
+						p
+							strong Teléfono Celular:
+							|    3194353140
+						.row(style="margin-bottom: 10px")
+							.col-lg-6
+								a(href="editar-datos.html" class="boton-editar") Editar
+							.col-lg-6
+								a(href="cambiar-contrasena.html" class="boton-editar") Cambiar contraseña
+						form(action="")
+							.form-group
+								.row.codigo-promocional
+									.col-lg-12
+										p Tienes códigos promocionales? Ingrésalos a continuación:
+									.col-lg-8
+										input(type="text" placeholder="Ingresa un código promocional" class="form-control campo")
+									.col-lg-4
+										input(type="submit" value="Verificar" class="btn-dark btn")
+			section#historial.historial.section
+				.row.full-height.align-items-center.justify-content-center
+					.col-lg-8
+						h2 Historial
+						p Acá puede revisar y descargar los avalúos realizados.
+						table(class="table")
+							thead(class="")
+								tr
+									th(scope="col" class="titulos") Id avalúo
+									th(scope="col" class="titulos") Fecha
+									th(scope="col" class="titulos") Dirección
+									th(scope="col" class="titulos") Estado
+									th(scope="col" class="titulos") Acciones
+								tbody
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td En proceso
+										td Descargar
+														
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td Completo
+										td Descargar
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td En proceso
+										td Descargar
+														
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td Completo
+										td Descargar
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td En proceso
+										td Descargar
+														
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td Completo
+										td Descargar
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td En proceso
+										td Descargar
+														
+									tr
+										th(scope="row")  12343425
+										td 20/10/2018
+										td Calle34 #23-65 Bogotá Cundinamarca
+										td Completo
+										td Descargar
+														
 			section#services.services.section
 				.row.full-height
 					.col-lg-6.col-avaluo.avaluo1

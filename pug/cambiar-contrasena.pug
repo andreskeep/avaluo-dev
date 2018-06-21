@@ -2,7 +2,7 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
-	title Avalúo fácil
+	title Avalúo fácil - Cambio de contraseña
 	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 	//Icons
 	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" )
@@ -29,7 +29,7 @@ body
 				li.item-menu
 					a(href="#" class="link active", onclick="$('[#home]').animatescroll();") Inicio
 				li.item-menu
-					a(href="#", class="link-ext perfil-link", id="perfil") Regístrate
+						a(href="perfil.html", class="link-ext",) Perfil
 				li.item-menu
 					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
 		nav.social-media
@@ -60,7 +60,7 @@ body
 					li.item-menu
 						a(href="perfil.html", class="link-ext perfil-link", id="perfil") Ingresar
 					li.item-menu
-						a(href="#", class="link active", id="register-form", onclick="$('#form-registro').animatescroll();") Registrarse
+						a(href="perfil.html", class="link-ext",) Perfil
 					li.item-menu
 						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
 			nav.social-media
@@ -91,44 +91,23 @@ body
 							.form-group
 								a(href="")
 							a(href="#" class="text-center" style="color: white; display: block") Olvidaste la contraseña
-							input(type="submit" class="registro-user" value="REGISTRARME")
+							a(href="#" class="registro-user") REGISTRARME
 							a(href="#" class="facebook-login") INGRESAR CON FACEBOOK
 					a(href="#" class="cerrar") 
 						i(class="far fa-times-circle")
 			section#form-registro.form-registro.section
 				.row.full-height.align-items-center.justify-content-center
 					.col-lg-4
-						h2.text-center Registrate
+						h2.text-center CAMBIAR CONTRASEÑA
 						p.datos.text-center Si tiene alguna inquietud puede contactarnos por cualquier medio que ofrecemos
 						form(action="send.php" method="post")
 							.row
-								.col-lg-6
-									select(name="estrato" class="form-control select" placeholder="Tipo de persona")
-										option(value="" disabled selected) Tipo de persona
-										option(value="Persona Natural") Persona Natural
-										option(value="Persona Jurídica") Persona Jurídica
-										option(value="Persona Gubernamental") Persona Gubernamental
-								.col-lg-6
-									input(type="text" placeholder="Nombre Completo" class="form-control campo")
-								.col-lg-6
-									select(name="estrato" class="form-control select" placeholder="Tipo de documento")
-										option(value="" disabled selected) Tipo de documento
-										option(value="Cedula de ciudadania") Cédula de ciudadania
-										option(value="Cédula de extranjeria") Cédula de extranjería
-										option(value="Tarjeta de identidad") tarjeta de identidad
-								.col-lg-6
-									input(type="text" placeholder="Documento" class="form-control campo")
-								.col-lg-6
-									input(type="text" placeholder="Celular" class="form-control campo")
-								.col-lg-6
-									input(type="email" placeholder="Email" class="form-control campo")
 								.col-lg-6
 									input(type="password" placeholder="Contraseña" class="form-control campo")
 								.col-lg-6
 									input(type="password" placeholder="Repita la contraseña" class="form-control campo")
 								.col-lg-12
-									a(href="#" class="registro-user") REGISTRARME
-									a(href="#" class="facebook-login") INGRESAR CON FACEBOOK
+									input(type="submit" class="registro-user" value="ENVIAR")
 			section#contacto.contacto.section
 				.row.full-height.align-items-center
 					.col-lg-6.form-container
