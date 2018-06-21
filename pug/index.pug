@@ -35,6 +35,8 @@ body
 				li.item-menu
 					a(href="#" class="link", onclick="$('[#packages]').animatescroll();" ) Paquetes
 				li.item-menu
+					a(href="perfil.html", class="link-ext",) Perfil
+				li.item-menu
 					a(href="#", class="link-ext perfil-link", id="perfil") Regístrate
 				li.item-menu
 					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
@@ -72,6 +74,10 @@ body
 					li.item-menu
 						a(href="#", class="link-ext perfil-link", id="perfil") Ingresar
 					li.item-menu
+						a(href="perfil.html", class="link-ext",) Perfil
+					li.item-menu
+						a(href="registro.html", class="link-ext", id="register-form") Registrarse
+					li.item-menu
 						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
 			nav.social-media
 				ul
@@ -97,10 +103,11 @@ body
 							.form-group
 								input(type="password" class="form-control campo" placeholder="Password")
 							.form-group.text-center
-								input(type="submit" class="ingresar" value="ingresar")
+								input(type="submit" class="ingresar" value="INGRESAR")
 							.form-group
 								a(href="")
 							a(href="#" class="text-center" style="color: white; display: block") Olvidaste la contraseña
+							a(href="#" class="registro-user") REGISTRARME
 							a(href="#" class="facebook-login") INGRESAR CON FACEBOOK
 					a(href="#" class="cerrar") 
 						i(class="far fa-times-circle")

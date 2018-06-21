@@ -18,8 +18,9 @@
   <div class="menu-responsive-back" id="menu-responsive-back"><a class="logo-wrapper" href="index.html"><img class="logo" src="img/avaluo-facil-logo-white.png" alt=""/></a>
     <nav>
       <ul class="menu-container">
-        <li class="item-menu"><a class="link" href="index.html" onclick="$('[#home]').animatescroll();">Inicio</a></li>
-        <li class="item-menu"><a class="link active" href="perfil.html">Perfil</a></li>
+        <li class="item-menu"><a class="link" href="index.html" onclick="$('[#home]').animatescroll();">Volver al Inicio</a></li>
+        <li class="item-menu"><a class="link" href="" onclick="$('#services').animatescroll();">Avalúos</a></li>
+        <li class="item-menu"><a class="link" href="" onclick="$('#packages').animatescroll();">Paquetes</a></li>
         <li class="item-menu"><a class="link" href="#" onclick="$('[#contact]').animatescroll();">Contácto</a></li>
       </ul>
     </nav>
@@ -35,8 +36,9 @@
     <div class="menu"><a class="logo-wrapper" href="index.html"><img class="logo" src="img/avaluo-facil-logo-white.png" alt=""/></a>
       <nav>
         <ul class="menu-container">
-          <li class="item-menu"><a class="link" href="index.html">Inicio</a></li>
-          <li class="item-menu"><a class="link active" href="perfil.html">Perfil</a></li>
+          <li class="item-menu"><a class="link-ext" href="index.html">Volver al Inicio</a></li>
+          <li class="item-menu"><a class="link" href="" onclick="$('#services').animatescroll();">Avalúos</a></li>
+          <li class="item-menu"><a class="link" href="" onclick="$('#packages').animatescroll();">Paquetes</a></li>
           <li class="item-menu"><a class="link" href="" onclick="$('#contacto').animatescroll();">Contácto</a></li>
         </ul>
       </nav>
@@ -50,7 +52,162 @@
     </div>
     <div class="logo-responsive" id="logo-responsive"><img src="img/avaluo-facil-logo.png" alt=""/></div>
     <div class="wrapper">
-      <section class="checkout section" id="checkout"></section>
+      <section class="services section" id="services">
+        <div class="row full-height">
+          <div class="col-lg-6 col-avaluo avaluo1">
+            <div class="title-section">
+              <h2><span class="avaluo">Avalúo</span><br/><span class="tipo">Informativo</span></h2>
+              <h3>Desde<span>$44.000</span></h3>
+            </div>
+            <div class="info">
+              <p>Valoración estadística del precio de una vivienda, oficina o local a excelentes precios. Avalúo Fácil emplea fuentes de información real y confiable por lo que el precio del inmueble y sus anexos se ajustan de manera significativa a valores representativos de mercado.</p>
+              <ul>
+                <li>Es el precio calculado estadísticamente de un inmueble en particular.</li>
+                <li>El modelo utiliza base de datos de información real y confiable.</li>
+                <li>Un Avalúo Informativo no es un avalúo oficial, pero es representativo para conocer el precio de merado de un inmueble.</li>
+                <li>Puede beneficiarse de excelentes descuentos, adquiriendo paquetes de avalúos informativos. (el BOTON paquetes me envía a la sección paquetes de avalúos en la aplicación)</li>
+                <li>Recibirá y podrá actualizar el Avalúo Informativo. Con este servicio conocerá el precio de mercado estimado, la calidad del avalúo, intervalo de precios para negociación, precio aproximado para arriendo y ubicación geográfica.</li>
+              </ul><a class="boton" href="#">Descargar ejemplo</a><a class="boton" href="checkout-informativo.html">comprar</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-avaluo avaluo2">
+            <div class="title-section">
+              <h2><span class="avaluo">Avalúo</span><br/><span class="tipo">Certificado</span></h2>
+              <h3>Desde<span>$44.000</span></h3>
+            </div>
+            <div class="info">
+              <p>Tenemos un equipo de profesionales listo para atender su solicitud de avalúo. Estamos en todas las ciudades de Colombia. Contáctese ahora mismo con nosotros para recibir mayor información.</p>
+              <ul>
+                <li>El avalúo Certificado es firmado por peritos certificados en el Registro Nacional de Avaluadores.</li>
+                <li>Este Avalúo es válido para cualquier trámite legal, financiero o sencillamente para actualización de activos con base a las Normas Internacionales de Información Financieras (NIIF).</li>
+                <li>Puede solicitarlo a través del chat o llamando a nuestros números telefónicos o directamente desde nuestra plataforma. (CLIC aquí para ingresar)</li>
+                <li>Tiempo de entrega record: 24 horas.</li>
+              </ul><a class="boton" href="#">Descargar ejemplo</a><a class="boton" href="checkout-certificado.html">comprar			</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="packages section" id="packages">
+        <div class="row full-height align-items-center">
+          <div class="col-lg-4 titulo">
+            <h2>Paquetes<br/><span>de avalúos</span></h2>
+          </div>
+          <div class="col-lg-8 cards">
+            <div class="row">
+              <div class="package-column">
+                <div class="card bg-light mb-3">
+                  <div class="card-header text-center"> 
+                    <h3 class="card-title">Paquete 1</h3>
+                    <h4 class="card-subtitle">10 AVALÚOS</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Precio por avalúo</div>
+                          <div class="column text-right price">$35.000</div>
+                        </div>
+                      </li>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Total</div>
+                          <div class="column text-right price">$350.000</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-lg-12 text-center"><a class="btn btn-dark boton" href="#">Comprar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="package-column">
+                <div class="card bg-light mb-3">
+                  <div class="card-header text-center"> 
+                    <h3 class="card-title">Paquete 2</h3>
+                    <h4 class="card-subtitle">20 AVALÚOS</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Precio por avalúo</div>
+                          <div class="column text-right price">$25.000</div>
+                        </div>
+                      </li>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Total</div>
+                          <div class="column text-right price">$500.000</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-lg-12 text-center"><a class="btn btn-dark boton" href="#">Comprar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="package-column">
+                <div class="card bg-light mb-3">
+                  <div class="card-header text-center"> 
+                    <h3 class="card-title">Paquete 3</h3>
+                    <h4 class="card-subtitle">30 AVALÚOS</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Precio por avalúo</div>
+                          <div class="column text-right price">$22.500</div>
+                        </div>
+                      </li>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Total</div>
+                          <div class="column text-right price">$675.000</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-lg-12 text-center"><a class="btn btn-dark boton" href="#">Comprar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="package-column">
+                <div class="card bg-light mb-3">
+                  <div class="card-header text-center"> 
+                    <h3 class="card-title">Paquete 4</h3>
+                    <h4 class="card-subtitle">50 AVALÚOS</h4>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Precio por avalúo</div>
+                          <div class="column text-right price">$20.000</div>
+                        </div>
+                      </li>
+                      <li class="card-text">
+                        <div class="row">
+                          <div class="column text-left">Total</div>
+                          <div class="column text-right price">$1'000.000</div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="row">
+                      <div class="col-lg-12 text-center"><a class="btn btn-dark boton" href="#">Comprar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="contacto section" id="contacto">
         <div class="row full-height align-items-center">
           <div class="col-lg-6 form-container">
@@ -160,5 +317,5 @@
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- Animate-->
   <script src="assets/js/animatescroll.min.js"></script>
-  <!-- script(src="assets/js/app.js")-->
+  <script src="assets/js/app.js"></script>
 </body>

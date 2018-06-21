@@ -26,9 +26,11 @@ body
 		nav
 			ul.menu-container
 				li.item-menu
-					a(href="index.html" class="link", onclick="$('[#home]').animatescroll();") Inicio
+					a(href="index.html" class="link", onclick="$('[#home]').animatescroll();") Volver al Inicio
 				li.item-menu
-					a(href="perfil.html", class="link active", ) Perfil
+					a(href="", class="link", onclick="$('#services').animatescroll();") Avalúos
+				li.item-menu
+					a(href="", class="link", onclick="$('#packages').animatescroll();") Paquetes
 				li.item-menu
 					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
 		nav.social-media
@@ -42,22 +44,22 @@ body
 				li
 					a(href="#")
 						i(class="fab fa-instagram")
-
 	#home.home
 		span.top
 		span.bottom
 		span.left
 		span.right
-
 		.menu
 			a(href="index.html", class="logo-wrapper")
 				img(src="img/avaluo-facil-logo-white.png", alt="", class="logo")
 			nav
 				ul.menu-container
 					li.item-menu
-						a(href="index.html", class="link") Inicio
+						a(href="index.html", class="link-ext") Volver al Inicio
 					li.item-menu
-						a(href="perfil.html", class="link active") Perfil
+						a(href="", class="link", onclick="$('#services').animatescroll();") Avalúos
+					li.item-menu
+						a(href="", class="link", onclick="$('#packages').animatescroll();") Paquetes
 					li.item-menu
 						a(href="", class="link", onclick="$('#contacto').animatescroll();") Contácto
 			nav.social-media
@@ -74,8 +76,127 @@ body
 		.logo-responsive#logo-responsive
 			img(src="img/avaluo-facil-logo.png", alt="")
 		.wrapper
-			section#checkout.checkout.section
-
+			section#services.services.section
+				.row.full-height
+					.col-lg-6.col-avaluo.avaluo1
+						.title-section
+							h2
+								span.avaluo Avalúo
+								br
+								span.tipo Informativo
+							h3
+								| Desde
+								span $44.000
+						.info
+							p Valoración estadística del precio de una vivienda, oficina o local a excelentes precios. Avalúo Fácil emplea fuentes de información real y confiable por lo que el precio del inmueble y sus anexos se ajustan de manera significativa a valores representativos de mercado.
+							ul
+								li Es el precio calculado estadísticamente de un inmueble en particular.
+								li El modelo utiliza base de datos de información real y confiable.
+								li Un Avalúo Informativo no es un avalúo oficial, pero es representativo para conocer el precio de merado de un inmueble.
+								li Puede beneficiarse de excelentes descuentos, adquiriendo paquetes de avalúos informativos. (el BOTON paquetes me envía a la sección paquetes de avalúos en la aplicación)
+								li Recibirá y podrá actualizar el Avalúo Informativo. Con este servicio conocerá el precio de mercado estimado, la calidad del avalúo, intervalo de precios para negociación, precio aproximado para arriendo y ubicación geográfica.
+							a(href="#" class="boton") Descargar ejemplo
+							a(href="checkout-informativo.html" class="boton") comprar
+					.col-lg-6.col-avaluo.avaluo2
+						.title-section
+							h2
+								span.avaluo Avalúo
+								br
+								span.tipo Certificado
+							h3
+								| Desde
+								span $44.000
+						.info
+							p Tenemos un equipo de profesionales listo para atender su solicitud de avalúo. Estamos en todas las ciudades de Colombia. Contáctese ahora mismo con nosotros para recibir mayor información.
+							ul
+								li El avalúo Certificado es firmado por peritos certificados en el Registro Nacional de Avaluadores.
+								li Este Avalúo es válido para cualquier trámite legal, financiero o sencillamente para actualización de activos con base a las Normas Internacionales de Información Financieras (NIIF).
+								li Puede solicitarlo a través del chat o llamando a nuestros números telefónicos o directamente desde nuestra plataforma. (CLIC aquí para ingresar)
+								li Tiempo de entrega record: 24 horas.
+							a(href="#" class="boton") Descargar ejemplo
+							a(href="checkout-certificado.html" class="boton") comprar			
+			section#packages.packages.section
+				.row.full-height.align-items-center
+					.col-lg-4.titulo
+						h2
+							|Paquetes
+							br
+							span de avalúos
+					.col-lg-8.cards
+						.row
+							.package-column
+								.card.bg-light.mb-3
+									.card-header.text-center 
+										h3.card-title Paquete 1
+										h4.card-subtitle 10 AVALÚOS
+									.card-body
+										ul
+											li.card-text
+												.row
+													.column.text-left Precio por avalúo
+													.column.text-right.price $35.000
+											li.card-text
+												.row
+													.column.text-left Total
+													.column.text-right.price $350.000
+										.row
+											.col-lg-12.text-center
+												a(href="#" class="btn btn-dark boton") Comprar
+							.package-column
+								.card.bg-light.mb-3
+									.card-header.text-center 
+										h3.card-title Paquete 2
+										h4.card-subtitle 20 AVALÚOS
+									.card-body
+										ul
+											li.card-text
+												.row
+													.column.text-left Precio por avalúo
+													.column.text-right.price $25.000
+											li.card-text
+												.row
+													.column.text-left Total
+													.column.text-right.price $500.000
+										.row
+											.col-lg-12.text-center
+												a(href="#" class="btn btn-dark boton") Comprar
+						.row
+							.package-column
+								.card.bg-light.mb-3
+									.card-header.text-center 
+										h3.card-title Paquete 3
+										h4.card-subtitle 30 AVALÚOS
+									.card-body
+										ul
+											li.card-text
+												.row
+													.column.text-left Precio por avalúo
+													.column.text-right.price $22.500
+											li.card-text
+												.row
+													.column.text-left Total
+													.column.text-right.price $675.000
+										.row
+											.col-lg-12.text-center
+												a(href="#" class="btn btn-dark boton") Comprar
+							.package-column
+								.card.bg-light.mb-3
+									.card-header.text-center 
+										h3.card-title Paquete 4
+										h4.card-subtitle 50 AVALÚOS
+									.card-body
+										ul
+											li.card-text
+												.row
+													.column.text-left Precio por avalúo
+													.column.text-right.price $20.000
+											li.card-text
+												.row
+													.column.text-left Total
+													.column.text-right.price $1'000.000
+										.row
+											.col-lg-12.text-center
+												a(href="#" class="btn btn-dark boton") Comprar
 			section#contacto.contacto.section
 				.row.full-height.align-items-center
 					.col-lg-6.form-container
@@ -176,5 +297,5 @@ body
 	script(src="assets/js/bootstrap.min.js")
 	// Animate
 	script(src="assets/js/animatescroll.min.js")
-	// script(src="assets/js/app.js")
+	script(src="assets/js/app.js")
 	

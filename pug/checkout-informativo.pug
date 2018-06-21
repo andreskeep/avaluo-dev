@@ -2,7 +2,7 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
-	title Avalúo fácil - checkout
+	title Avalúo fácil - Checkout informativo
 	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
 	//Icons
 	link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" )
@@ -74,7 +74,7 @@ body
 		.wrapper
 			section#checkout.checkout.section
 				form(action="send" method="post" class="full-height" style="display: block")
-					.row.full-height.align-items-center
+					.row.full-height
 						.col-lg-6
 							.row.justify-center
 								.col-lg-12
@@ -110,7 +110,7 @@ body
 											input(type="text" placeholder="Dirección" class="form-control campo")
 										.col-lg-12
 											iframe(src="https://snazzymaps.com/embed/77933" width="100%" height="200px" style="border:none;")
-									p.text-center Datos del inmueble
+									p.text-center.datos Datos del inmueble
 									.row(style="margin:10px 0")
 										.col-lg-4
 											input(type="text" placeholder="Habitaciones" class="form-control campo")
@@ -136,7 +136,7 @@ body
 											input(type="text" placeholder="Pisos totales de la edificación" class="form-control campo")
 										.col-lg-4
 											input(type="text" placeholder="Piso de la propiedad" class="form-control campo")
-									p.text-center Completa estos datos para finalizar la compra
+									p.text-center.datos Completa estos datos para finalizar la compra
 									.row(style="margin:10px 0px 0px 0px")
 										.col-lg-4
 											input(type="text" placeholder="Nombre" class="form-control campo")

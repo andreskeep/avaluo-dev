@@ -101,6 +101,21 @@
 		background: #1064B2
 		color: white
 		margin-top: 10px
+		transition: .5s
+		&:hover
+			background: #143F64
+	& .registro-user
+		width: 100%
+		padding: 10px
+		text-align: center
+		display: block
+		text-decoration: none
+		background: #a81212
+		color: white
+		margin-top: 10px
+		transition: .5s
+		&:hover
+			background: #1F1F1F
 
 
 .logo-responsive
@@ -1383,13 +1398,87 @@ section.footer
 				color: #B2B2B2
 				&:hover
 					text-decoration: none
+section.form-registro
+	background: rgba(227, 37, 34, 0.895)
+	& h1, h2, h3, h4, p
+		color: white
+		text-transform: uppercase
+	& form
+		& .campo
+			width: 100%
+			border-radius: 15px
+			transition: .4s ease-in-out
+			margin-bottom: 20px
+			@media(max-width:768px)
+				width: 70%
+				height: 50px
+				margin: 0 auto
+				margin-bottom: 10px
+			@media(max-width:556px)
+				width: 100%
+				height: auto
+			&:focus
+				outline: 0
+				box-shadow: none
+				border: 1px solid red
+		& .select
+			margin-bottom: 20px
+			border-radius: 15px
+			text-align: center
+			color: gray
+			transition: .4s ease-in-out
+			@media(max-width:768px)
+				width: 70%
+				height: 50px
+				margin: 0 auto
+				margin-bottom: 10px
+			@media(max-width:556px)
+				width: 100%
+				height: auto
+			&:focus
+				outline: 0 !important
+				box-shadow: none
+				border: 1px solid red
+			& option
+				text-align: center
+				@media(max-width:768px)
+					width: 100%
+	& .facebook-login
+		width: 100%
+		padding: 10px
+		text-align: center
+		display: block
+		text-decoration: none
+		background: #1064B2
+		color: white
+		margin-top: 10px
+		transition: .5s
+		&:hover
+			background: #143F64
+	& .registro-user
+		width: 100%
+		padding: 10px
+		text-align: center
+		display: block
+		text-decoration: none
+		background: #434343
+		color: white
+		margin-top: 10px
+		transition: .5s
+		&:hover
+			background: #1F1F1F
 
 section.checkout
 	background: url(../../img/background.jpg)
+	background-size: cover
+	background-repeat: no-repeat
 	padding: 0
 	height: calc(130vh - 100px)
 	@media(max-width:556px)
 		height: 300vh
+	& .datos
+		text-transform: uppercase
+		color: #929292
 	& h1.informacion1
 		text-align: center
 		text-transform: uppercase
