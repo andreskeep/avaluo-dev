@@ -237,22 +237,7 @@
   transition: .4s ease-in-out;
 }
 
-/* line 168, sass/avaluo-styles.sass */
-.container-icon .icon-toggle:hover span.bar1 {
-  left: 120%;
-}
-
-/* line 170, sass/avaluo-styles.sass */
-.container-icon .icon-toggle:hover span.bar2 {
-  left: 120%;
-}
-
-/* line 172, sass/avaluo-styles.sass */
-.container-icon .icon-toggle:hover span.bar3 {
-  left: 120%;
-}
-
-/* line 174, sass/avaluo-styles.sass */
+/* line 167, sass/avaluo-styles.sass */
 .container-icon .icon-toggle span {
   position: absolute;
   width: 100%;
@@ -261,40 +246,71 @@
   transition: .4s ease-in-out;
 }
 
-/* line 180, sass/avaluo-styles.sass */
+/* line 173, sass/avaluo-styles.sass */
 .container-icon .icon-toggle span.bar1 {
-  left: 0;
+  left: 0%;
   top: 0;
   transition: .4s ease-in-out;
 }
 
-/* line 184, sass/avaluo-styles.sass */
+/* line 177, sass/avaluo-styles.sass */
 .container-icon .icon-toggle span.bar2 {
-  left: 0;
+  left: 0%;
   top: 10px;
   transition: .6s ease-in-out;
 }
 
-/* line 188, sass/avaluo-styles.sass */
+/* line 181, sass/avaluo-styles.sass */
 .container-icon .icon-toggle span.bar3 {
-  left: 0;
+  left: 0%;
   top: 20px;
   transition: .8s ease-in-out;
 }
 
-/* line 192, sass/avaluo-styles.sass */
+/* line 185, sass/avaluo-styles.sass */
 .container-icon .icon-toggle span.bar4 {
   left: 0;
+  top: 0;
   transition: .6s ease-in-out;
 }
 
-/* line 195, sass/avaluo-styles.sass */
+/* line 189, sass/avaluo-styles.sass */
 .container-icon .icon-toggle span.bar5 {
   right: 0;
+  top: 20px;
   transition: .8s ease-in-out;
 }
 
+/* line 194, sass/avaluo-styles.sass */
+.container-icon .icon-toggle.active span.bar1 {
+  left: 120%;
+}
+
+/* line 196, sass/avaluo-styles.sass */
+.container-icon .icon-toggle.active span.bar2 {
+  left: 120%;
+}
+
+/* line 198, sass/avaluo-styles.sass */
+.container-icon .icon-toggle.active span.bar3 {
+  left: 120%;
+}
+
 /* line 200, sass/avaluo-styles.sass */
+.container-icon .icon-toggle.active span.bar4 {
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* line 203, sass/avaluo-styles.sass */
+.container-icon .icon-toggle.active span.bar5 {
+  top: 10px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/* line 208, sass/avaluo-styles.sass */
 .menu-responsive-back {
   background: #424242;
   width: 0%;
@@ -308,7 +324,7 @@
   /* Logo*/
 }
 
-/* line 210, sass/avaluo-styles.sass */
+/* line 218, sass/avaluo-styles.sass */
 .menu-responsive-back.active {
   position: fixed;
   top: 0;
@@ -320,7 +336,7 @@
   background: #424242;
 }
 
-/* line 221, sass/avaluo-styles.sass */
+/* line 229, sass/avaluo-styles.sass */
 .menu-responsive-back .logo-wrapper {
   position: relative;
   display: block;
@@ -329,69 +345,69 @@
   height: 20%;
 }
 
-/* line 227, sass/avaluo-styles.sass */
+/* line 235, sass/avaluo-styles.sass */
 .menu-responsive-back .logo-wrapper .logo {
   display: block;
   width: 200px;
   margin: 0 auto;
 }
 
-/* line 231, sass/avaluo-styles.sass */
+/* line 239, sass/avaluo-styles.sass */
 .menu-responsive-back .social-media {
   margin-top: 40px;
   text-align: center;
 }
 
-/* line 234, sass/avaluo-styles.sass */
+/* line 242, sass/avaluo-styles.sass */
 .menu-responsive-back .social-media ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 237, sass/avaluo-styles.sass */
+/* line 245, sass/avaluo-styles.sass */
 .menu-responsive-back .social-media ul li {
   list-style: none;
   display: inline-block;
 }
 
-/* line 240, sass/avaluo-styles.sass */
+/* line 248, sass/avaluo-styles.sass */
 .menu-responsive-back .social-media ul li a {
   color: #C9C9C9;
   margin: 0 5px;
   transition: .4s ease-in-out;
 }
 
-/* line 244, sass/avaluo-styles.sass */
+/* line 252, sass/avaluo-styles.sass */
 .menu-responsive-back .social-media ul li a:hover {
   color: #F4F4F4;
 }
 
-/* line 246, sass/avaluo-styles.sass */
+/* line 254, sass/avaluo-styles.sass */
 .menu-responsive-back .social-media ul li a i {
   font-size: 1.5em;
 }
 
-/* line 248, sass/avaluo-styles.sass */
+/* line 256, sass/avaluo-styles.sass */
 .menu-responsive-back nav {
   width: 70%;
   position: relative;
   margin: 0 auto;
 }
 
-/* line 252, sass/avaluo-styles.sass */
+/* line 260, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container {
   padding: 50px;
   height: 50%;
 }
 
-/* line 255, sass/avaluo-styles.sass */
+/* line 263, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu {
   list-style: none;
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* line 259, sass/avaluo-styles.sass */
+/* line 267, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link-ext {
   position: relative;
   color: white;
@@ -402,20 +418,20 @@
 }
 
 @media (max-width: 768px) {
-  /* line 259, sass/avaluo-styles.sass */
+  /* line 267, sass/avaluo-styles.sass */
   .menu-responsive-back nav .menu-container .item-menu .link-ext {
     font-size: 2em;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 259, sass/avaluo-styles.sass */
+  /* line 267, sass/avaluo-styles.sass */
   .menu-responsive-back nav .menu-container .item-menu .link-ext {
     font-size: 1.3em;
   }
 }
 
-/* line 270, sass/avaluo-styles.sass */
+/* line 278, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link-ext:after {
   content: '';
   background-image: url(../../img/border-right.png);
@@ -431,26 +447,26 @@
   transition: .4s ease-in-out;
 }
 
-/* line 284, sass/avaluo-styles.sass */
+/* line 292, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link-ext:hover {
   font-family: 'roboto_condensedbold';
 }
 
-/* line 286, sass/avaluo-styles.sass */
+/* line 294, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link-ext:hover:after {
   opacity: 1;
   right: -10px;
   top: -3px;
 }
 
-/* line 290, sass/avaluo-styles.sass */
+/* line 298, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link-ext:hover:before {
   opacity: 1;
   left: -10px;
   bottom: -3px;
 }
 
-/* line 294, sass/avaluo-styles.sass */
+/* line 302, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link-ext:before {
   content: '';
   background-image: url(../../img/border-left.png);
@@ -466,12 +482,12 @@
   transition: .4s ease-in-out;
 }
 
-/* line 308, sass/avaluo-styles.sass */
+/* line 316, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link-ext.active {
   font-family: 'roboto_condensedbold';
 }
 
-/* line 310, sass/avaluo-styles.sass */
+/* line 318, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link-ext.active:after {
   content: '';
   background-image: url(../../img/border-right.png);
@@ -486,7 +502,7 @@
   opacity: 1;
 }
 
-/* line 323, sass/avaluo-styles.sass */
+/* line 331, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link-ext.active:before {
   content: '';
   background-image: url(../../img/border-left.png);
@@ -501,7 +517,7 @@
   opacity: 1;
 }
 
-/* line 336, sass/avaluo-styles.sass */
+/* line 344, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link {
   position: relative;
   color: white;
@@ -512,20 +528,20 @@
 }
 
 @media (max-width: 768px) {
-  /* line 336, sass/avaluo-styles.sass */
+  /* line 344, sass/avaluo-styles.sass */
   .menu-responsive-back nav .menu-container .item-menu .link {
     font-size: 2em;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 336, sass/avaluo-styles.sass */
+  /* line 344, sass/avaluo-styles.sass */
   .menu-responsive-back nav .menu-container .item-menu .link {
     font-size: 1.3em;
   }
 }
 
-/* line 347, sass/avaluo-styles.sass */
+/* line 355, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link:after {
   content: '';
   background-image: url(../../img/border-right.png);
@@ -541,26 +557,26 @@
   transition: .4s ease-in-out;
 }
 
-/* line 361, sass/avaluo-styles.sass */
+/* line 369, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link:hover {
   font-family: 'roboto_condensedbold';
 }
 
-/* line 363, sass/avaluo-styles.sass */
+/* line 371, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link:hover:after {
   opacity: 1;
   right: -10px;
   top: -3px;
 }
 
-/* line 367, sass/avaluo-styles.sass */
+/* line 375, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link:hover:before {
   opacity: 1;
   left: -10px;
   bottom: -3px;
 }
 
-/* line 371, sass/avaluo-styles.sass */
+/* line 379, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link:before {
   content: '';
   background-image: url(../../img/border-left.png);
@@ -576,12 +592,12 @@
   transition: .4s ease-in-out;
 }
 
-/* line 385, sass/avaluo-styles.sass */
+/* line 393, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link.active {
   font-family: 'roboto_condensedbold';
 }
 
-/* line 387, sass/avaluo-styles.sass */
+/* line 395, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link.active:after {
   content: '';
   background-image: url(../../img/border-right.png);
@@ -596,7 +612,7 @@
   opacity: 1;
 }
 
-/* line 400, sass/avaluo-styles.sass */
+/* line 408, sass/avaluo-styles.sass */
 .menu-responsive-back nav .menu-container .item-menu .link.active:before {
   content: '';
   background-image: url(../../img/border-left.png);
@@ -611,18 +627,18 @@
   opacity: 1;
 }
 
-/* line 415, sass/avaluo-styles.sass */
+/* line 423, sass/avaluo-styles.sass */
 body {
   font-family: 'roboto_condensedlight';
 }
 
 /* Márgenes*/
-/* line 420, sass/avaluo-styles.sass */
+/* line 428, sass/avaluo-styles.sass */
 .home {
   position: relative;
 }
 
-/* line 422, sass/avaluo-styles.sass */
+/* line 430, sass/avaluo-styles.sass */
 .home span.top {
   position: fixed;
   top: 0;
@@ -634,13 +650,13 @@ body {
 }
 
 @media (max-width: 996px) {
-  /* line 422, sass/avaluo-styles.sass */
+  /* line 430, sass/avaluo-styles.sass */
   .home span.top {
     height: 20px;
   }
 }
 
-/* line 432, sass/avaluo-styles.sass */
+/* line 440, sass/avaluo-styles.sass */
 .home span.bottom {
   position: fixed;
   bottom: 0;
@@ -652,13 +668,13 @@ body {
 }
 
 @media (max-width: 996px) {
-  /* line 432, sass/avaluo-styles.sass */
+  /* line 440, sass/avaluo-styles.sass */
   .home span.bottom {
     height: 20px;
   }
 }
 
-/* line 442, sass/avaluo-styles.sass */
+/* line 450, sass/avaluo-styles.sass */
 .home span.left {
   position: fixed;
   bottom: 0;
@@ -670,13 +686,13 @@ body {
 }
 
 @media (max-width: 996px) {
-  /* line 442, sass/avaluo-styles.sass */
+  /* line 450, sass/avaluo-styles.sass */
   .home span.left {
     width: 20px;
   }
 }
 
-/* line 453, sass/avaluo-styles.sass */
+/* line 461, sass/avaluo-styles.sass */
 .home span.right {
   position: fixed;
   bottom: 0;
@@ -688,14 +704,14 @@ body {
 }
 
 @media (max-width: 996px) {
-  /* line 453, sass/avaluo-styles.sass */
+  /* line 461, sass/avaluo-styles.sass */
   .home span.right {
     width: 20px;
   }
 }
 
 /*Menu*/
-/* line 466, sass/avaluo-styles.sass */
+/* line 474, sass/avaluo-styles.sass */
 .menu {
   position: fixed;
   left: 0;
@@ -709,13 +725,13 @@ body {
 }
 
 @media (max-width: 996px) {
-  /* line 466, sass/avaluo-styles.sass */
+  /* line 474, sass/avaluo-styles.sass */
   .menu {
     display: none;
   }
 }
 
-/* line 480, sass/avaluo-styles.sass */
+/* line 488, sass/avaluo-styles.sass */
 .menu .logo-wrapper {
   position: relative;
   display: block;
@@ -723,14 +739,14 @@ body {
   margin-top: 30px;
 }
 
-/* line 485, sass/avaluo-styles.sass */
+/* line 493, sass/avaluo-styles.sass */
 .menu .logo-wrapper .logo {
   display: block;
   width: 200px;
   margin: 0 auto;
 }
 
-/* line 489, sass/avaluo-styles.sass */
+/* line 497, sass/avaluo-styles.sass */
 .menu .social-media {
   margin-bottom: 40px;
   position: absolute;
@@ -740,36 +756,36 @@ body {
           transform: translateX(-50%);
 }
 
-/* line 495, sass/avaluo-styles.sass */
+/* line 503, sass/avaluo-styles.sass */
 .menu .social-media ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 498, sass/avaluo-styles.sass */
+/* line 506, sass/avaluo-styles.sass */
 .menu .social-media ul li {
   list-style: none;
   display: inline-block;
 }
 
-/* line 501, sass/avaluo-styles.sass */
+/* line 509, sass/avaluo-styles.sass */
 .menu .social-media ul li a {
   color: gray;
   margin: 0 5px;
   transition: .4s ease-in-out;
 }
 
-/* line 505, sass/avaluo-styles.sass */
+/* line 513, sass/avaluo-styles.sass */
 .menu .social-media ul li a:hover {
   color: #283B65;
 }
 
-/* line 507, sass/avaluo-styles.sass */
+/* line 515, sass/avaluo-styles.sass */
 .menu .social-media ul li a i {
   font-size: 1.5em;
 }
 
-/* line 509, sass/avaluo-styles.sass */
+/* line 517, sass/avaluo-styles.sass */
 .menu .menu-container {
   padding: 50px;
   padding-bottom: 40px;
@@ -778,13 +794,13 @@ body {
   margin-top: 30px;
 }
 
-/* line 515, sass/avaluo-styles.sass */
+/* line 523, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu {
   list-style: none;
   margin-bottom: 10px;
 }
 
-/* line 518, sass/avaluo-styles.sass */
+/* line 526, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link-ext {
   position: relative;
   color: gray;
@@ -794,7 +810,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 525, sass/avaluo-styles.sass */
+/* line 533, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link-ext:after {
   content: '';
   background-image: url(../../img/border-right.png);
@@ -810,26 +826,26 @@ body {
   transition: .4s ease-in-out;
 }
 
-/* line 539, sass/avaluo-styles.sass */
+/* line 547, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link-ext:hover {
   font-family: 'roboto_condensedbold';
 }
 
-/* line 541, sass/avaluo-styles.sass */
+/* line 549, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link-ext:hover:after {
   opacity: 1;
   right: -10px;
   top: -3px;
 }
 
-/* line 545, sass/avaluo-styles.sass */
+/* line 553, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link-ext:hover:before {
   opacity: 1;
   left: -10px;
   bottom: -3px;
 }
 
-/* line 549, sass/avaluo-styles.sass */
+/* line 557, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link-ext:before {
   content: '';
   background-image: url(../../img/border-left.png);
@@ -845,12 +861,12 @@ body {
   transition: .4s ease-in-out;
 }
 
-/* line 563, sass/avaluo-styles.sass */
+/* line 571, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link-ext.active {
   font-family: 'roboto_condensedbold';
 }
 
-/* line 565, sass/avaluo-styles.sass */
+/* line 573, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link-ext.active:after {
   content: '';
   background-image: url(../../img/border-right.png);
@@ -865,7 +881,7 @@ body {
   opacity: 1;
 }
 
-/* line 578, sass/avaluo-styles.sass */
+/* line 586, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link-ext.active:before {
   content: '';
   background-image: url(../../img/border-left.png);
@@ -880,7 +896,7 @@ body {
   opacity: 1;
 }
 
-/* line 591, sass/avaluo-styles.sass */
+/* line 599, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link {
   position: relative;
   color: gray;
@@ -890,7 +906,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 598, sass/avaluo-styles.sass */
+/* line 606, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link:after {
   content: '';
   background-image: url(../../img/border-right.png);
@@ -906,26 +922,26 @@ body {
   transition: .4s ease-in-out;
 }
 
-/* line 612, sass/avaluo-styles.sass */
+/* line 620, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link:hover {
   font-family: 'roboto_condensedbold';
 }
 
-/* line 614, sass/avaluo-styles.sass */
+/* line 622, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link:hover:after {
   opacity: 1;
   right: -10px;
   top: -3px;
 }
 
-/* line 618, sass/avaluo-styles.sass */
+/* line 626, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link:hover:before {
   opacity: 1;
   left: -10px;
   bottom: -3px;
 }
 
-/* line 622, sass/avaluo-styles.sass */
+/* line 630, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link:before {
   content: '';
   background-image: url(../../img/border-left.png);
@@ -941,12 +957,12 @@ body {
   transition: .4s ease-in-out;
 }
 
-/* line 636, sass/avaluo-styles.sass */
+/* line 644, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link.active {
   font-family: 'roboto_condensedbold';
 }
 
-/* line 638, sass/avaluo-styles.sass */
+/* line 646, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link.active:after {
   content: '';
   background-image: url(../../img/border-right.png);
@@ -961,7 +977,7 @@ body {
   opacity: 1;
 }
 
-/* line 651, sass/avaluo-styles.sass */
+/* line 659, sass/avaluo-styles.sass */
 .menu .menu-container .item-menu .link.active:before {
   content: '';
   background-image: url(../../img/border-left.png);
@@ -976,7 +992,7 @@ body {
   opacity: 1;
 }
 
-/* line 667, sass/avaluo-styles.sass */
+/* line 675, sass/avaluo-styles.sass */
 .wrapper {
   position: relative;
   left: 350px;
@@ -987,7 +1003,7 @@ body {
 }
 
 @media (max-width: 996px) {
-  /* line 667, sass/avaluo-styles.sass */
+  /* line 675, sass/avaluo-styles.sass */
   .wrapper {
     top: 20px;
     left: 20px;
@@ -995,7 +1011,7 @@ body {
   }
 }
 
-/* line 679, sass/avaluo-styles.sass */
+/* line 687, sass/avaluo-styles.sass */
 section.section {
   width: 100%;
   height: calc(100vh - 100px);
@@ -1006,13 +1022,13 @@ section.section {
 }
 
 @media (max-width: 996px) {
-  /* line 679, sass/avaluo-styles.sass */
+  /* line 687, sass/avaluo-styles.sass */
   section.section {
     height: calc(100vh - 40px);
   }
 }
 
-/* line 689, sass/avaluo-styles.sass */
+/* line 697, sass/avaluo-styles.sass */
 section.slider {
   background-image: url();
   background-size: cover;
@@ -1020,28 +1036,28 @@ section.slider {
   background-repeat: no-repeat;
 }
 
-/* line 695, sass/avaluo-styles.sass */
+/* line 703, sass/avaluo-styles.sass */
 section.slider .slide {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-/* line 699, sass/avaluo-styles.sass */
+/* line 707, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner {
   height: 100%;
   overflow: hidden;
   width: 100%;
 }
 
-/* line 703, sass/avaluo-styles.sass */
+/* line 711, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item {
   height: 100%;
   overflow: hidden;
   width: 100%;
 }
 
-/* line 707, sass/avaluo-styles.sass */
+/* line 715, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item h3 {
   color: #858585;
   font-size: 1.4em;
@@ -1050,21 +1066,21 @@ section.slider .slide .carousel-inner .carousel-item h3 {
 }
 
 @media (max-width: 768px) {
-  /* line 707, sass/avaluo-styles.sass */
+  /* line 715, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item h3 {
     font-size: 2.1em;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 707, sass/avaluo-styles.sass */
+  /* line 715, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item h3 {
     margin-top: 60px;
     font-size: .8em;
   }
 }
 
-/* line 717, sass/avaluo-styles.sass */
+/* line 725, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item h2 {
   color: #bcbcbc;
   font-family: 'roboto_condensedbold_italic';
@@ -1074,27 +1090,27 @@ section.slider .slide .carousel-inner .carousel-item h2 {
 }
 
 @media (max-width: 768px) {
-  /* line 717, sass/avaluo-styles.sass */
+  /* line 725, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item h2 {
     font-size: 4em;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 717, sass/avaluo-styles.sass */
+  /* line 725, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item h2 {
     font-size: 1.3em;
   }
 }
 
-/* line 727, sass/avaluo-styles.sass */
+/* line 735, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item h2 span {
   display: block;
   font-size: .45em !important;
   font-family: 'roboto_condensedregular';
 }
 
-/* line 731, sass/avaluo-styles.sass */
+/* line 739, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item h1 {
   text-align: center;
   margin: 30px 0;
@@ -1104,51 +1120,51 @@ section.slider .slide .carousel-inner .carousel-item h1 {
 }
 
 @media (max-width: 768px) {
-  /* line 731, sass/avaluo-styles.sass */
+  /* line 739, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item h1 {
     font-size: 2.4em;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 731, sass/avaluo-styles.sass */
+  /* line 739, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item h1 {
     font-size: 1.1em;
   }
 }
 
-/* line 741, sass/avaluo-styles.sass */
+/* line 749, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item h1 .one {
   position: relative;
   background: #5b5b5b;
   padding: 5px 10px;
 }
 
-/* line 745, sass/avaluo-styles.sass */
+/* line 753, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item h1 .one:after {
   height: 100%;
   width: 100%;
 }
 
-/* line 749, sass/avaluo-styles.sass */
+/* line 757, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item h1 .two {
   position: relative;
   background: #e44040;
   padding: 5px 20px;
 }
 
-/* line 753, sass/avaluo-styles.sass */
+/* line 761, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item h1 .two:after {
   height: 100%;
   width: 100%;
 }
 
-/* line 757, sass/avaluo-styles.sass */
+/* line 765, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item form {
   width: 100%;
 }
 
-/* line 759, sass/avaluo-styles.sass */
+/* line 767, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item form .campo {
   width: 23%;
   margin: 0 6px;
@@ -1158,7 +1174,7 @@ section.slider .slide .carousel-inner .carousel-item form .campo {
 }
 
 @media (max-width: 768px) {
-  /* line 759, sass/avaluo-styles.sass */
+  /* line 767, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item form .campo {
     width: 70%;
     height: 50px;
@@ -1168,21 +1184,21 @@ section.slider .slide .carousel-inner .carousel-item form .campo {
 }
 
 @media (max-width: 556px) {
-  /* line 759, sass/avaluo-styles.sass */
+  /* line 767, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item form .campo {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 773, sass/avaluo-styles.sass */
+/* line 781, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item form .campo:focus {
   outline: 0;
   box-shadow: none;
   border: 1px solid red;
 }
 
-/* line 777, sass/avaluo-styles.sass */
+/* line 785, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item form .select {
   width: 25%;
   margin: 0 6px;
@@ -1193,7 +1209,7 @@ section.slider .slide .carousel-inner .carousel-item form .select {
 }
 
 @media (max-width: 768px) {
-  /* line 777, sass/avaluo-styles.sass */
+  /* line 785, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item form .select {
     width: 70%;
     height: 50px;
@@ -1203,33 +1219,33 @@ section.slider .slide .carousel-inner .carousel-item form .select {
 }
 
 @media (max-width: 556px) {
-  /* line 777, sass/avaluo-styles.sass */
+  /* line 785, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item form .select {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 792, sass/avaluo-styles.sass */
+/* line 800, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item form .select:focus {
   outline: 0 !important;
   box-shadow: none;
   border: 1px solid red;
 }
 
-/* line 796, sass/avaluo-styles.sass */
+/* line 804, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item form .select option {
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  /* line 796, sass/avaluo-styles.sass */
+  /* line 804, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item form .select option {
     width: 100%;
   }
 }
 
-/* line 800, sass/avaluo-styles.sass */
+/* line 808, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item form .enviar {
   width: 20%;
   cursor: pointer;
@@ -1240,13 +1256,13 @@ section.slider .slide .carousel-inner .carousel-item form .enviar {
   transition: .5s ease-in-out;
 }
 
-/* line 808, sass/avaluo-styles.sass */
+/* line 816, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item form .enviar:hover {
   background: #3C5B93;
 }
 
 @media (max-width: 768px) {
-  /* line 800, sass/avaluo-styles.sass */
+  /* line 808, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item form .enviar {
     width: 40%;
     margin: 10px auto;
@@ -1255,20 +1271,20 @@ section.slider .slide .carousel-inner .carousel-item form .enviar:hover {
 }
 
 @media (max-width: 556px) {
-  /* line 800, sass/avaluo-styles.sass */
+  /* line 808, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item form .enviar {
     font-size: 1.0em;
     margin-bottom: 0;
   }
 }
 
-/* line 817, sass/avaluo-styles.sass */
+/* line 825, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item .result {
   margin-top: 30px;
   position: relative;
 }
 
-/* line 820, sass/avaluo-styles.sass */
+/* line 828, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item .result span.title-valor {
   position: absolute;
   display: block;
@@ -1284,13 +1300,13 @@ section.slider .slide .carousel-inner .carousel-item .result span.title-valor {
 }
 
 @media (max-width: 556px) {
-  /* line 820, sass/avaluo-styles.sass */
+  /* line 828, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item .result span.title-valor {
     font-size: .65em;
   }
 }
 
-/* line 833, sass/avaluo-styles.sass */
+/* line 841, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item .result span.valor {
   font-family: 'roboto_condensedlight_italic';
   padding: 10px 80px;
@@ -1301,20 +1317,20 @@ section.slider .slide .carousel-inner .carousel-item .result span.valor {
 }
 
 @media (max-width: 768px) {
-  /* line 833, sass/avaluo-styles.sass */
+  /* line 841, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item .result span.valor {
     padding: 10px 30px;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 833, sass/avaluo-styles.sass */
+  /* line 841, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item .result span.valor {
     font-size: 1.2em;
   }
 }
 
-/* line 844, sass/avaluo-styles.sass */
+/* line 852, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item .result span.valor:after {
   content: '';
   background-image: url(../../img/border-right.png);
@@ -1331,7 +1347,7 @@ section.slider .slide .carousel-inner .carousel-item .result span.valor:after {
   z-index: 100000;
 }
 
-/* line 859, sass/avaluo-styles.sass */
+/* line 867, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item .result span.valor:before {
   content: '';
   background-image: url(../../img/border-left.png);
@@ -1347,7 +1363,7 @@ section.slider .slide .carousel-inner .carousel-item .result span.valor:before {
   transition: .4s ease-in-out;
 }
 
-/* line 874, sass/avaluo-styles.sass */
+/* line 882, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .carousel-item .registrate {
   color: white;
   font-family: 'roboto_condensedbold_italic';
@@ -1361,7 +1377,7 @@ section.slider .slide .carousel-inner .carousel-item .registrate {
 }
 
 @media (max-width: 768px) {
-  /* line 874, sass/avaluo-styles.sass */
+  /* line 882, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item .registrate {
     font-size: 1.3em;
     padding: 10px 30px;
@@ -1369,14 +1385,14 @@ section.slider .slide .carousel-inner .carousel-item .registrate {
 }
 
 @media (max-width: 556px) {
-  /* line 874, sass/avaluo-styles.sass */
+  /* line 882, sass/avaluo-styles.sass */
   section.slider .slide .carousel-inner .carousel-item .registrate {
     font-size: .85em;
     padding: 10px 30px;
   }
 }
 
-/* line 891, sass/avaluo-styles.sass */
+/* line 899, sass/avaluo-styles.sass */
 section.slider .slide .carousel-inner .search {
   background-image: url(../../img/search.png);
   background-repeat: no-repeat;
@@ -1384,13 +1400,13 @@ section.slider .slide .carousel-inner .search {
   background-position: top left;
 }
 
-/* line 899, sass/avaluo-styles.sass */
+/* line 907, sass/avaluo-styles.sass */
 section.slider .arrow i {
   color: red !important;
 }
 
 @media (max-width: 768px) {
-  /* line 901, sass/avaluo-styles.sass */
+  /* line 909, sass/avaluo-styles.sass */
   section.slider .arrow .fa-arrow-left {
     position: absolute;
     bottom: 0px;
@@ -1403,7 +1419,7 @@ section.slider .arrow i {
 }
 
 @media (max-width: 768px) {
-  /* line 910, sass/avaluo-styles.sass */
+  /* line 918, sass/avaluo-styles.sass */
   section.slider .arrow .fa-arrow-right {
     position: absolute;
     bottom: 0px;
@@ -1416,20 +1432,20 @@ section.slider .arrow i {
 }
 
 @media (max-width: 768px) {
-  /* line 921, sass/avaluo-styles.sass */
+  /* line 929, sass/avaluo-styles.sass */
   section.about {
     height: 130vh;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 921, sass/avaluo-styles.sass */
+  /* line 929, sass/avaluo-styles.sass */
   section.about {
     height: 240vh;
   }
 }
 
-/* line 926, sass/avaluo-styles.sass */
+/* line 934, sass/avaluo-styles.sass */
 section.about h2.title-quienes {
   font-family: 'roboto_condensedlight';
   color: #8D8D8D;
@@ -1437,25 +1453,25 @@ section.about h2.title-quienes {
   text-align: center;
 }
 
-/* line 931, sass/avaluo-styles.sass */
+/* line 939, sass/avaluo-styles.sass */
 section.about h2.title-quienes span {
   color: red;
 }
 
-/* line 933, sass/avaluo-styles.sass */
+/* line 941, sass/avaluo-styles.sass */
 section.about p {
   color: #898989;
   text-align: justify;
   font-size: 1em;
 }
 
-/* line 938, sass/avaluo-styles.sass */
+/* line 946, sass/avaluo-styles.sass */
 section.about ul li {
   color: #898989;
   font-size: 1em;
 }
 
-/* line 941, sass/avaluo-styles.sass */
+/* line 949, sass/avaluo-styles.sass */
 section.about p.small {
   padding: 20px;
   background: #0066ad;
@@ -1463,45 +1479,45 @@ section.about p.small {
   font-size: .7em;
 }
 
-/* line 946, sass/avaluo-styles.sass */
+/* line 954, sass/avaluo-styles.sass */
 section.about h2.info-important {
   margin: 0;
 }
 
-/* line 948, sass/avaluo-styles.sass */
+/* line 956, sass/avaluo-styles.sass */
 section.services {
   padding-top: 70px;
 }
 
 @media (max-width: 768px) {
-  /* line 948, sass/avaluo-styles.sass */
+  /* line 956, sass/avaluo-styles.sass */
   section.services {
     height: 220%;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 948, sass/avaluo-styles.sass */
+  /* line 956, sass/avaluo-styles.sass */
   section.services {
     padding-top: 10px;
     height: 180vh;
   }
 }
 
-/* line 956, sass/avaluo-styles.sass */
+/* line 964, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section {
   height: 30%;
 }
 
 @media (max-width: 768px) {
-  /* line 956, sass/avaluo-styles.sass */
+  /* line 964, sass/avaluo-styles.sass */
   section.services .avaluo1 .title-section {
     margin-top: 50px;
     height: auto;
   }
 }
 
-/* line 961, sass/avaluo-styles.sass */
+/* line 969, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2 {
   font-family: 'roboto_condensedlight';
   text-transform: uppercase;
@@ -1511,7 +1527,7 @@ section.services .avaluo1 .title-section h2 {
   position: relative;
 }
 
-/* line 968, sass/avaluo-styles.sass */
+/* line 976, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2:after {
   content: '';
   position: absolute;
@@ -1528,14 +1544,14 @@ section.services .avaluo1 .title-section h2:after {
 }
 
 @media (max-width: 768px) {
-  /* line 968, sass/avaluo-styles.sass */
+  /* line 976, sass/avaluo-styles.sass */
   section.services .avaluo1 .title-section h2:after {
     left: 20%;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 968, sass/avaluo-styles.sass */
+  /* line 976, sass/avaluo-styles.sass */
   section.services .avaluo1 .title-section h2:after {
     left: 5%;
     width: 30px;
@@ -1543,7 +1559,7 @@ section.services .avaluo1 .title-section h2:after {
   }
 }
 
-/* line 986, sass/avaluo-styles.sass */
+/* line 994, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2:before {
   content: '';
   position: absolute;
@@ -1560,14 +1576,14 @@ section.services .avaluo1 .title-section h2:before {
 }
 
 @media (max-width: 768px) {
-  /* line 986, sass/avaluo-styles.sass */
+  /* line 994, sass/avaluo-styles.sass */
   section.services .avaluo1 .title-section h2:before {
     right: 20%;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 986, sass/avaluo-styles.sass */
+  /* line 994, sass/avaluo-styles.sass */
   section.services .avaluo1 .title-section h2:before {
     right: 5%;
     width: 30px;
@@ -1575,13 +1591,13 @@ section.services .avaluo1 .title-section h2:before {
   }
 }
 
-/* line 1004, sass/avaluo-styles.sass */
+/* line 1012, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2 .avaluo {
   font-size: 1.6em;
   color: #5A5A5A;
 }
 
-/* line 1007, sass/avaluo-styles.sass */
+/* line 1015, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h2 .tipo {
   position: relative;
   font-family: 'roboto_condensedbold';
@@ -1589,7 +1605,7 @@ section.services .avaluo1 .title-section h2 .tipo {
   color: #0066ad;
 }
 
-/* line 1012, sass/avaluo-styles.sass */
+/* line 1020, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h3 {
   text-align: center;
   text-transform: uppercase;
@@ -1597,13 +1613,13 @@ section.services .avaluo1 .title-section h3 {
   margin-bottom: 40px;
 }
 
-/* line 1017, sass/avaluo-styles.sass */
+/* line 1025, sass/avaluo-styles.sass */
 section.services .avaluo1 .title-section h3 span {
   color: #0066ad;
   font-family: 'roboto_condensedlight_italic';
 }
 
-/* line 1020, sass/avaluo-styles.sass */
+/* line 1028, sass/avaluo-styles.sass */
 section.services .avaluo1 .info {
   background: url(../../img/back-avaluo.jpg);
   background-position: top center;
@@ -1614,7 +1630,7 @@ section.services .avaluo1 .info {
 }
 
 @media (max-width: 768px) {
-  /* line 1020, sass/avaluo-styles.sass */
+  /* line 1028, sass/avaluo-styles.sass */
   section.services .avaluo1 .info {
     height: auto;
     padding: 40px;
@@ -1622,30 +1638,30 @@ section.services .avaluo1 .info {
 }
 
 @media (max-width: 556px) {
-  /* line 1020, sass/avaluo-styles.sass */
+  /* line 1028, sass/avaluo-styles.sass */
   section.services .avaluo1 .info {
     padding: 0px;
   }
 }
 
-/* line 1032, sass/avaluo-styles.sass */
+/* line 1040, sass/avaluo-styles.sass */
 section.services .avaluo1 .info p {
   color: #363636;
 }
 
-/* line 1035, sass/avaluo-styles.sass */
+/* line 1043, sass/avaluo-styles.sass */
 section.services .avaluo1 .info ul {
   margin-bottom: 30px;
 }
 
 @media (max-width: 1366px) {
-  /* line 1035, sass/avaluo-styles.sass */
+  /* line 1043, sass/avaluo-styles.sass */
   section.services .avaluo1 .info ul {
     display: none;
   }
 }
 
-/* line 1039, sass/avaluo-styles.sass */
+/* line 1047, sass/avaluo-styles.sass */
 section.services .avaluo1 .info ul li {
   font-family: 'roboto_condensedlight';
   color: #787878;
@@ -1653,13 +1669,13 @@ section.services .avaluo1 .info ul li {
 }
 
 @media (max-width: 1366px) {
-  /* line 1039, sass/avaluo-styles.sass */
+  /* line 1047, sass/avaluo-styles.sass */
   section.services .avaluo1 .info ul li {
     font-size: .8em;
   }
 }
 
-/* line 1045, sass/avaluo-styles.sass */
+/* line 1053, sass/avaluo-styles.sass */
 section.services .avaluo1 .info .boton {
   background: #0066ad;
   padding: 10px 30px;
@@ -1671,7 +1687,7 @@ section.services .avaluo1 .info .boton {
 }
 
 @media (max-width: 556px) {
-  /* line 1045, sass/avaluo-styles.sass */
+  /* line 1053, sass/avaluo-styles.sass */
   section.services .avaluo1 .info .boton {
     width: 100%;
     display: block;
@@ -1681,25 +1697,25 @@ section.services .avaluo1 .info .boton {
   }
 }
 
-/* line 1059, sass/avaluo-styles.sass */
+/* line 1067, sass/avaluo-styles.sass */
 section.services .avaluo1 .info .boton:hover {
   text-decoration: none;
 }
 
-/* line 1062, sass/avaluo-styles.sass */
+/* line 1070, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section {
   height: 30%;
 }
 
 @media (max-width: 768px) {
-  /* line 1062, sass/avaluo-styles.sass */
+  /* line 1070, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section {
     margin-top: 50px;
     height: auto;
   }
 }
 
-/* line 1067, sass/avaluo-styles.sass */
+/* line 1075, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2 {
   font-family: 'roboto_condensedlight';
   text-transform: uppercase;
@@ -1710,7 +1726,7 @@ section.services .avaluo2 .title-section h2 {
 }
 
 @media (max-width: 768px) {
-  /* line 1067, sass/avaluo-styles.sass */
+  /* line 1075, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2 {
     margin-top: 80px;
     height: auto;
@@ -1718,13 +1734,13 @@ section.services .avaluo2 .title-section h2 {
 }
 
 @media (max-width: 556px) {
-  /* line 1067, sass/avaluo-styles.sass */
+  /* line 1075, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2 {
     height: auto;
   }
 }
 
-/* line 1079, sass/avaluo-styles.sass */
+/* line 1087, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2:after {
   content: '';
   position: absolute;
@@ -1741,14 +1757,14 @@ section.services .avaluo2 .title-section h2:after {
 }
 
 @media (max-width: 768px) {
-  /* line 1079, sass/avaluo-styles.sass */
+  /* line 1087, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2:after {
     left: 20%;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 1079, sass/avaluo-styles.sass */
+  /* line 1087, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2:after {
     left: 5%;
     width: 30px;
@@ -1756,7 +1772,7 @@ section.services .avaluo2 .title-section h2:after {
   }
 }
 
-/* line 1097, sass/avaluo-styles.sass */
+/* line 1105, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2:before {
   content: '';
   position: absolute;
@@ -1773,14 +1789,14 @@ section.services .avaluo2 .title-section h2:before {
 }
 
 @media (max-width: 768px) {
-  /* line 1097, sass/avaluo-styles.sass */
+  /* line 1105, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2:before {
     right: 20%;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 1097, sass/avaluo-styles.sass */
+  /* line 1105, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2:before {
     right: 5%;
     width: 30px;
@@ -1789,19 +1805,19 @@ section.services .avaluo2 .title-section h2:before {
 }
 
 @media (max-width: 556px) {
-  /* line 1067, sass/avaluo-styles.sass */
+  /* line 1075, sass/avaluo-styles.sass */
   section.services .avaluo2 .title-section h2 {
     margin-top: 40px;
   }
 }
 
-/* line 1117, sass/avaluo-styles.sass */
+/* line 1125, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2 .avaluo {
   font-size: 1.6em;
   color: #5A5A5A;
 }
 
-/* line 1120, sass/avaluo-styles.sass */
+/* line 1128, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h2 .tipo {
   position: relative;
   font-family: 'roboto_condensedbold';
@@ -1809,7 +1825,7 @@ section.services .avaluo2 .title-section h2 .tipo {
   color: red;
 }
 
-/* line 1125, sass/avaluo-styles.sass */
+/* line 1133, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h3 {
   text-align: center;
   text-transform: uppercase;
@@ -1817,13 +1833,13 @@ section.services .avaluo2 .title-section h3 {
   margin-bottom: 40px;
 }
 
-/* line 1130, sass/avaluo-styles.sass */
+/* line 1138, sass/avaluo-styles.sass */
 section.services .avaluo2 .title-section h3 span {
   color: red;
   font-family: 'roboto_condensedlight_italic';
 }
 
-/* line 1133, sass/avaluo-styles.sass */
+/* line 1141, sass/avaluo-styles.sass */
 section.services .avaluo2 .info {
   background: url(../../img/back-avaluo.jpg);
   background-position: top center;
@@ -1834,7 +1850,7 @@ section.services .avaluo2 .info {
 }
 
 @media (max-width: 768px) {
-  /* line 1133, sass/avaluo-styles.sass */
+  /* line 1141, sass/avaluo-styles.sass */
   section.services .avaluo2 .info {
     height: auto;
     padding: 40px;
@@ -1842,43 +1858,43 @@ section.services .avaluo2 .info {
 }
 
 @media (max-width: 556px) {
-  /* line 1133, sass/avaluo-styles.sass */
+  /* line 1141, sass/avaluo-styles.sass */
   section.services .avaluo2 .info {
     padding: 0px;
   }
 }
 
-/* line 1145, sass/avaluo-styles.sass */
+/* line 1153, sass/avaluo-styles.sass */
 section.services .avaluo2 .info p {
   color: #363636;
 }
 
-/* line 1148, sass/avaluo-styles.sass */
+/* line 1156, sass/avaluo-styles.sass */
 section.services .avaluo2 .info ul {
   margin-bottom: 30px;
 }
 
 @media (max-width: 1366px) {
-  /* line 1148, sass/avaluo-styles.sass */
+  /* line 1156, sass/avaluo-styles.sass */
   section.services .avaluo2 .info ul {
     display: none;
   }
 }
 
-/* line 1152, sass/avaluo-styles.sass */
+/* line 1160, sass/avaluo-styles.sass */
 section.services .avaluo2 .info ul li {
   font-family: 'roboto_condensedlight';
   color: #787878;
 }
 
 @media (max-width: 1366px) {
-  /* line 1152, sass/avaluo-styles.sass */
+  /* line 1160, sass/avaluo-styles.sass */
   section.services .avaluo2 .info ul li {
     font-size: .8em;
   }
 }
 
-/* line 1157, sass/avaluo-styles.sass */
+/* line 1165, sass/avaluo-styles.sass */
 section.services .avaluo2 .info .boton {
   background: red;
   padding: 10px 30px;
@@ -1890,7 +1906,7 @@ section.services .avaluo2 .info .boton {
 }
 
 @media (max-width: 556px) {
-  /* line 1157, sass/avaluo-styles.sass */
+  /* line 1165, sass/avaluo-styles.sass */
   section.services .avaluo2 .info .boton {
     width: 100%;
     display: block;
@@ -1900,43 +1916,43 @@ section.services .avaluo2 .info .boton {
   }
 }
 
-/* line 1171, sass/avaluo-styles.sass */
+/* line 1179, sass/avaluo-styles.sass */
 section.services .avaluo2 .info .boton:hover {
   text-decoration: none;
 }
 
-/* line 1173, sass/avaluo-styles.sass */
+/* line 1181, sass/avaluo-styles.sass */
 section.packages {
   background: url(../../img/background.jpg);
 }
 
 @media (max-width: 768px) {
-  /* line 1173, sass/avaluo-styles.sass */
+  /* line 1181, sass/avaluo-styles.sass */
   section.packages {
     height: 100vh;
   }
 }
 
 @media (max-width: 556px) {
-  /* line 1173, sass/avaluo-styles.sass */
+  /* line 1181, sass/avaluo-styles.sass */
   section.packages {
     height: 180vh;
   }
 }
 
-/* line 1179, sass/avaluo-styles.sass */
+/* line 1187, sass/avaluo-styles.sass */
 section.packages .titulo {
   padding: 100px;
 }
 
 @media (max-width: 768px) {
-  /* line 1179, sass/avaluo-styles.sass */
+  /* line 1187, sass/avaluo-styles.sass */
   section.packages .titulo {
     padding: 30px;
   }
 }
 
-/* line 1183, sass/avaluo-styles.sass */
+/* line 1191, sass/avaluo-styles.sass */
 section.packages .package-column {
   width: 50%;
   float: left;
@@ -1944,13 +1960,13 @@ section.packages .package-column {
 }
 
 @media (max-width: 556px) {
-  /* line 1183, sass/avaluo-styles.sass */
+  /* line 1191, sass/avaluo-styles.sass */
   section.packages .package-column {
     width: 100%;
   }
 }
 
-/* line 1189, sass/avaluo-styles.sass */
+/* line 1197, sass/avaluo-styles.sass */
 section.packages h2 {
   font-family: 'roboto_condensedbold_italic';
   color: #0066ad;
@@ -1960,20 +1976,20 @@ section.packages h2 {
 }
 
 @media (max-width: 1366px) {
-  /* line 1189, sass/avaluo-styles.sass */
+  /* line 1197, sass/avaluo-styles.sass */
   section.packages h2 {
     font-size: 2.2em;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 1189, sass/avaluo-styles.sass */
+  /* line 1197, sass/avaluo-styles.sass */
   section.packages h2 {
     text-align: center;
   }
 }
 
-/* line 1199, sass/avaluo-styles.sass */
+/* line 1207, sass/avaluo-styles.sass */
 section.packages h2 span {
   position: relative;
   color: #717171;
@@ -1981,7 +1997,7 @@ section.packages h2 span {
   display: block;
 }
 
-/* line 1204, sass/avaluo-styles.sass */
+/* line 1212, sass/avaluo-styles.sass */
 section.packages h2:after {
   content: '';
   width: 200px;
@@ -1993,7 +2009,7 @@ section.packages h2:after {
 }
 
 @media (max-width: 768px) {
-  /* line 1204, sass/avaluo-styles.sass */
+  /* line 1212, sass/avaluo-styles.sass */
   section.packages h2:after {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -2001,7 +2017,7 @@ section.packages h2:after {
   }
 }
 
-/* line 1215, sass/avaluo-styles.sass */
+/* line 1223, sass/avaluo-styles.sass */
 section.packages h2:before {
   content: '';
   width: 150px;
@@ -2013,7 +2029,7 @@ section.packages h2:before {
 }
 
 @media (max-width: 768px) {
-  /* line 1215, sass/avaluo-styles.sass */
+  /* line 1223, sass/avaluo-styles.sass */
   section.packages h2:before {
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -2021,19 +2037,19 @@ section.packages h2:before {
   }
 }
 
-/* line 1226, sass/avaluo-styles.sass */
+/* line 1234, sass/avaluo-styles.sass */
 section.packages .card-header {
   border-bottom: 4px solid #757575;
 }
 
 @media (max-width: 1366px) {
-  /* line 1226, sass/avaluo-styles.sass */
+  /* line 1234, sass/avaluo-styles.sass */
   section.packages .card-header {
     padding: 3px;
   }
 }
 
-/* line 1230, sass/avaluo-styles.sass */
+/* line 1238, sass/avaluo-styles.sass */
 section.packages .card-header .card-title {
   font-family: 'roboto_condensedbold';
   text-transform: uppercase;
@@ -2042,7 +2058,7 @@ section.packages .card-header .card-title {
 }
 
 @media (max-width: 1366px) {
-  /* line 1230, sass/avaluo-styles.sass */
+  /* line 1238, sass/avaluo-styles.sass */
   section.packages .card-header .card-title {
     font-size: 1.3em;
     padding: 5px;
@@ -2050,24 +2066,24 @@ section.packages .card-header .card-title {
   }
 }
 
-/* line 1239, sass/avaluo-styles.sass */
+/* line 1247, sass/avaluo-styles.sass */
 section.packages .card-header .card-subtitle {
   color: #747474;
 }
 
 @media (max-width: 1366px) {
-  /* line 1239, sass/avaluo-styles.sass */
+  /* line 1247, sass/avaluo-styles.sass */
   section.packages .card-header .card-subtitle {
     font-size: 1em;
   }
 }
 
-/* line 1243, sass/avaluo-styles.sass */
+/* line 1251, sass/avaluo-styles.sass */
 section.packages .card-body {
   padding-bottom: 0;
 }
 
-/* line 1245, sass/avaluo-styles.sass */
+/* line 1253, sass/avaluo-styles.sass */
 section.packages .card-body .boton {
   border-radius: 10px;
   border-bottom-right-radius: 0;
@@ -2080,18 +2096,18 @@ section.packages .card-body .boton {
   text-transform: uppercase;
 }
 
-/* line 1255, sass/avaluo-styles.sass */
+/* line 1263, sass/avaluo-styles.sass */
 section.packages .card-body .boton:hover {
   background: #434343;
   padding: 10px 50px;
 }
 
-/* line 1259, sass/avaluo-styles.sass */
+/* line 1267, sass/avaluo-styles.sass */
 section.packages .card-body ul {
   padding: 0;
 }
 
-/* line 1261, sass/avaluo-styles.sass */
+/* line 1269, sass/avaluo-styles.sass */
 section.packages .card-body ul li {
   list-style: none;
   border-bottom: 2px solid #5599c8;
@@ -2099,58 +2115,58 @@ section.packages .card-body ul li {
 }
 
 @media (max-width: 1366px) {
-  /* line 1261, sass/avaluo-styles.sass */
+  /* line 1269, sass/avaluo-styles.sass */
   section.packages .card-body ul li {
     line-height: 30px;
   }
 }
 
-/* line 1267, sass/avaluo-styles.sass */
+/* line 1275, sass/avaluo-styles.sass */
 section.packages .card-body .card-text {
   text-transform: uppercase;
   font-size: 1.2em;
 }
 
 @media (max-width: 1366px) {
-  /* line 1267, sass/avaluo-styles.sass */
+  /* line 1275, sass/avaluo-styles.sass */
   section.packages .card-body .card-text {
     font-size: .8em;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 1267, sass/avaluo-styles.sass */
+  /* line 1275, sass/avaluo-styles.sass */
   section.packages .card-body .card-text {
     font-size: .8em;
   }
 }
 
-/* line 1274, sass/avaluo-styles.sass */
+/* line 1282, sass/avaluo-styles.sass */
 section.packages .card-body .card-text .column {
   width: 50%;
   float: left;
   padding: 0 15px;
 }
 
-/* line 1279, sass/avaluo-styles.sass */
+/* line 1287, sass/avaluo-styles.sass */
 section.packages .card-body .card-text .price {
   font-family: 'roboto_condensedbold';
   color: #616161;
 }
 
 @media (max-width: 556px) {
-  /* line 1282, sass/avaluo-styles.sass */
+  /* line 1290, sass/avaluo-styles.sass */
   section.contacto {
     height: 200vh;
   }
 }
 
-/* line 1285, sass/avaluo-styles.sass */
+/* line 1293, sass/avaluo-styles.sass */
 section.contacto .form-container {
   padding: 40px;
 }
 
-/* line 1287, sass/avaluo-styles.sass */
+/* line 1295, sass/avaluo-styles.sass */
 section.contacto .form-container h2 {
   text-align: center;
   text-transform: uppercase;
@@ -2159,31 +2175,31 @@ section.contacto .form-container h2 {
 }
 
 @media (max-width: 1366px) {
-  /* line 1287, sass/avaluo-styles.sass */
+  /* line 1295, sass/avaluo-styles.sass */
   section.contacto .form-container h2 {
     font-size: 1em;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 1287, sass/avaluo-styles.sass */
+  /* line 1295, sass/avaluo-styles.sass */
   section.contacto .form-container h2 {
     font-size: 1.6em;
   }
 }
 
-/* line 1296, sass/avaluo-styles.sass */
+/* line 1304, sass/avaluo-styles.sass */
 section.contacto .form-container h2 span {
   color: #4A7DDB;
   font-size: 1.3em;
 }
 
-/* line 1299, sass/avaluo-styles.sass */
+/* line 1307, sass/avaluo-styles.sass */
 section.contacto .form-container form {
   width: 100%;
 }
 
-/* line 1301, sass/avaluo-styles.sass */
+/* line 1309, sass/avaluo-styles.sass */
 section.contacto .form-container form .campo {
   width: 100%;
   border-radius: 15px;
@@ -2192,7 +2208,7 @@ section.contacto .form-container form .campo {
 }
 
 @media (max-width: 768px) {
-  /* line 1301, sass/avaluo-styles.sass */
+  /* line 1309, sass/avaluo-styles.sass */
   section.contacto .form-container form .campo {
     width: 70%;
     height: 50px;
@@ -2202,43 +2218,43 @@ section.contacto .form-container form .campo {
 }
 
 @media (max-width: 556px) {
-  /* line 1301, sass/avaluo-styles.sass */
+  /* line 1309, sass/avaluo-styles.sass */
   section.contacto .form-container form .campo {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 1314, sass/avaluo-styles.sass */
+/* line 1322, sass/avaluo-styles.sass */
 section.contacto .form-container form .campo:focus {
   outline: 0;
   box-shadow: none;
   border: 1px solid red;
 }
 
-/* line 1318, sass/avaluo-styles.sass */
+/* line 1326, sass/avaluo-styles.sass */
 section.contacto .form-container form .btn {
   border: none;
 }
 
-/* line 1320, sass/avaluo-styles.sass */
+/* line 1328, sass/avaluo-styles.sass */
 section.contacto .form-container form .btn:hover {
   background: #4A7DDB;
 }
 
-/* line 1322, sass/avaluo-styles.sass */
+/* line 1330, sass/avaluo-styles.sass */
 section.contacto p {
   font-size: 1em;
 }
 
 @media (max-width: 1366px) {
-  /* line 1322, sass/avaluo-styles.sass */
+  /* line 1330, sass/avaluo-styles.sass */
   section.contacto p {
     font-size: .8em;
   }
 }
 
-/* line 1326, sass/avaluo-styles.sass */
+/* line 1334, sass/avaluo-styles.sass */
 section.contacto i {
   font-size: 2em;
   display: inline-block;
@@ -2247,7 +2263,7 @@ section.contacto i {
   color: #595959;
 }
 
-/* line 1332, sass/avaluo-styles.sass */
+/* line 1340, sass/avaluo-styles.sass */
 section.contacto .photo {
   height: 100vh;
   background-image: url(../../img/contacto2.jpg);
@@ -2255,7 +2271,7 @@ section.contacto .photo {
   background-repeat: no-repeat;
 }
 
-/* line 1338, sass/avaluo-styles.sass */
+/* line 1346, sass/avaluo-styles.sass */
 section.contacto .photo h2 {
   text-transform: uppercase;
   font-family: 'roboto_condensedbold';
@@ -2264,25 +2280,25 @@ section.contacto .photo h2 {
   display: inline-block;
 }
 
-/* line 1344, sass/avaluo-styles.sass */
+/* line 1352, sass/avaluo-styles.sass */
 section.contacto .photo h2 a {
   color: white;
   transition: .2s;
 }
 
-/* line 1347, sass/avaluo-styles.sass */
+/* line 1355, sass/avaluo-styles.sass */
 section.contacto .photo h2 a:hover {
   text-decoration: none;
   padding: 10px 40px;
 }
 
-/* line 1351, sass/avaluo-styles.sass */
+/* line 1359, sass/avaluo-styles.sass */
 section.footer {
   height: 100%;
   position: relative;
 }
 
-/* line 1354, sass/avaluo-styles.sass */
+/* line 1362, sass/avaluo-styles.sass */
 section.footer h2.aliados {
   font-family: 'roboto_condensedbold_italic';
   text-transform: uppercase;
@@ -2291,18 +2307,18 @@ section.footer h2.aliados {
 }
 
 @media (max-width: 556px) {
-  /* line 1354, sass/avaluo-styles.sass */
+  /* line 1362, sass/avaluo-styles.sass */
   section.footer h2.aliados {
     padding-top: 50px;
   }
 }
 
-/* line 1361, sass/avaluo-styles.sass */
+/* line 1369, sass/avaluo-styles.sass */
 section.footer h2.aliados span {
   color: #707070;
 }
 
-/* line 1363, sass/avaluo-styles.sass */
+/* line 1371, sass/avaluo-styles.sass */
 section.footer .logos {
   width: 90%;
   height: auto;
@@ -2311,13 +2327,13 @@ section.footer .logos {
 }
 
 @media (max-width: 556px) {
-  /* line 1363, sass/avaluo-styles.sass */
+  /* line 1371, sass/avaluo-styles.sass */
   section.footer .logos {
     margin: 30px auto;
   }
 }
 
-/* line 1370, sass/avaluo-styles.sass */
+/* line 1378, sass/avaluo-styles.sass */
 section.footer .footer-content {
   background: #353535;
   padding: 50px;
@@ -2326,7 +2342,7 @@ section.footer .footer-content {
   width: 100%;
 }
 
-/* line 1376, sass/avaluo-styles.sass */
+/* line 1384, sass/avaluo-styles.sass */
 section.footer .footer-content:after {
   content: '';
   position: absolute;
@@ -2344,49 +2360,49 @@ section.footer .footer-content:after {
           transform: translateX(-50%);
 }
 
-/* line 1390, sass/avaluo-styles.sass */
+/* line 1398, sass/avaluo-styles.sass */
 section.footer strong {
   color: white;
 }
 
-/* line 1392, sass/avaluo-styles.sass */
+/* line 1400, sass/avaluo-styles.sass */
 section.footer p {
   color: #B2B2B2;
 }
 
-/* line 1394, sass/avaluo-styles.sass */
+/* line 1402, sass/avaluo-styles.sass */
 section.footer ul {
   padding: 0;
   padding-left: 10px;
 }
 
-/* line 1397, sass/avaluo-styles.sass */
+/* line 1405, sass/avaluo-styles.sass */
 section.footer ul li {
   list-style: none;
 }
 
-/* line 1399, sass/avaluo-styles.sass */
+/* line 1407, sass/avaluo-styles.sass */
 section.footer ul li a {
   color: #B2B2B2;
 }
 
-/* line 1401, sass/avaluo-styles.sass */
+/* line 1409, sass/avaluo-styles.sass */
 section.footer ul li a:hover {
   text-decoration: none;
 }
 
-/* line 1403, sass/avaluo-styles.sass */
+/* line 1411, sass/avaluo-styles.sass */
 section.form-registro {
   background: rgba(227, 37, 34, 0.895);
 }
 
-/* line 1405, sass/avaluo-styles.sass */
+/* line 1413, sass/avaluo-styles.sass */
 section.form-registro h1, section.form-registro h2, section.form-registro h3, section.form-registro h4, section.form-registro p {
   color: white;
   text-transform: uppercase;
 }
 
-/* line 1409, sass/avaluo-styles.sass */
+/* line 1417, sass/avaluo-styles.sass */
 section.form-registro form .campo {
   width: 100%;
   border-radius: 15px;
@@ -2395,7 +2411,7 @@ section.form-registro form .campo {
 }
 
 @media (max-width: 768px) {
-  /* line 1409, sass/avaluo-styles.sass */
+  /* line 1417, sass/avaluo-styles.sass */
   section.form-registro form .campo {
     width: 70%;
     height: 50px;
@@ -2405,21 +2421,21 @@ section.form-registro form .campo {
 }
 
 @media (max-width: 556px) {
-  /* line 1409, sass/avaluo-styles.sass */
+  /* line 1417, sass/avaluo-styles.sass */
   section.form-registro form .campo {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 1422, sass/avaluo-styles.sass */
+/* line 1430, sass/avaluo-styles.sass */
 section.form-registro form .campo:focus {
   outline: 0;
   box-shadow: none;
   border: 1px solid red;
 }
 
-/* line 1426, sass/avaluo-styles.sass */
+/* line 1434, sass/avaluo-styles.sass */
 section.form-registro form .select {
   margin-bottom: 20px;
   border-radius: 15px;
@@ -2429,7 +2445,7 @@ section.form-registro form .select {
 }
 
 @media (max-width: 768px) {
-  /* line 1426, sass/avaluo-styles.sass */
+  /* line 1434, sass/avaluo-styles.sass */
   section.form-registro form .select {
     width: 70%;
     height: 50px;
@@ -2439,33 +2455,33 @@ section.form-registro form .select {
 }
 
 @media (max-width: 556px) {
-  /* line 1426, sass/avaluo-styles.sass */
+  /* line 1434, sass/avaluo-styles.sass */
   section.form-registro form .select {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 1440, sass/avaluo-styles.sass */
+/* line 1448, sass/avaluo-styles.sass */
 section.form-registro form .select:focus {
   outline: 0 !important;
   box-shadow: none;
   border: 1px solid red;
 }
 
-/* line 1444, sass/avaluo-styles.sass */
+/* line 1452, sass/avaluo-styles.sass */
 section.form-registro form .select option {
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  /* line 1444, sass/avaluo-styles.sass */
+  /* line 1452, sass/avaluo-styles.sass */
   section.form-registro form .select option {
     width: 100%;
   }
 }
 
-/* line 1448, sass/avaluo-styles.sass */
+/* line 1456, sass/avaluo-styles.sass */
 section.form-registro .facebook-login {
   width: 100%;
   padding: 10px;
@@ -2478,12 +2494,12 @@ section.form-registro .facebook-login {
   transition: .5s;
 }
 
-/* line 1458, sass/avaluo-styles.sass */
+/* line 1466, sass/avaluo-styles.sass */
 section.form-registro .facebook-login:hover {
   background: #143F64;
 }
 
-/* line 1460, sass/avaluo-styles.sass */
+/* line 1468, sass/avaluo-styles.sass */
 section.form-registro .registro-user {
   border: none;
   cursor: pointer;
@@ -2498,12 +2514,12 @@ section.form-registro .registro-user {
   transition: .5s;
 }
 
-/* line 1472, sass/avaluo-styles.sass */
+/* line 1480, sass/avaluo-styles.sass */
 section.form-registro .registro-user:hover {
   background: #1F1F1F;
 }
 
-/* line 1475, sass/avaluo-styles.sass */
+/* line 1482, sass/avaluo-styles.sass */
 section.checkout {
   background: url(../../img/background.jpg);
   background-size: cover;
@@ -2512,27 +2528,34 @@ section.checkout {
   height: calc(130vh - 100px);
 }
 
-@media (max-width: 556px) {
-  /* line 1475, sass/avaluo-styles.sass */
+@media (max-width: 768px) {
+  /* line 1482, sass/avaluo-styles.sass */
   section.checkout {
-    height: 300vh;
+    height: calc(180vh - 100px);
   }
 }
 
-/* line 1483, sass/avaluo-styles.sass */
+@media (max-width: 556px) {
+  /* line 1482, sass/avaluo-styles.sass */
+  section.checkout {
+    height: 290vh;
+  }
+}
+
+/* line 1492, sass/avaluo-styles.sass */
 section.checkout .datos {
   text-transform: uppercase;
   color: #929292;
 }
 
-/* line 1486, sass/avaluo-styles.sass */
+/* line 1495, sass/avaluo-styles.sass */
 section.checkout h1.informacion1 {
   text-align: center;
   text-transform: uppercase;
   margin-top: 100px;
 }
 
-/* line 1490, sass/avaluo-styles.sass */
+/* line 1499, sass/avaluo-styles.sass */
 section.checkout h2.informacion {
   color: #0066ad;
   text-shadow: none;
@@ -2540,13 +2563,13 @@ section.checkout h2.informacion {
   padding-top: 50px;
 }
 
-/* line 1496, sass/avaluo-styles.sass */
+/* line 1505, sass/avaluo-styles.sass */
 section.checkout h2.informacion span {
   color: #9D9D9D;
   font-size: .86em;
 }
 
-/* line 1499, sass/avaluo-styles.sass */
+/* line 1508, sass/avaluo-styles.sass */
 section.checkout h2 {
   font-family: 'roboto_condensedbold';
   color: white;
@@ -2556,17 +2579,17 @@ section.checkout h2 {
   margin: 20px 0;
 }
 
-/* line 1506, sass/avaluo-styles.sass */
+/* line 1515, sass/avaluo-styles.sass */
 section.checkout .table-checkout {
   font-family: 'roboto_condensedlight';
 }
 
-/* line 1508, sass/avaluo-styles.sass */
+/* line 1517, sass/avaluo-styles.sass */
 section.checkout .btn-dark {
   width: 100%;
 }
 
-/* line 1510, sass/avaluo-styles.sass */
+/* line 1519, sass/avaluo-styles.sass */
 section.checkout .comprar {
   position: relative;
   background-image: url(../../img/contacto2.jpg);
@@ -2574,31 +2597,41 @@ section.checkout .comprar {
   background-repeat: no-repeat;
 }
 
-/* line 1516, sass/avaluo-styles.sass */
+/* line 1525, sass/avaluo-styles.sass */
 section.checkout .comprar .table-absolute {
   position: fixed;
-  width: 500px;
+  width: 25%;
   top: 20%;
-  top-left: 50%;
-  top-transform: translate(-50%, -50%);
-  top-z-index: 100000000000;
+  left: 65%;
+  z-index: 100000000000;
 }
 
-/* line 1523, sass/avaluo-styles.sass */
+@media (max-width: 768px) {
+  /* line 1525, sass/avaluo-styles.sass */
+  section.checkout .comprar .table-absolute {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 90%;
+    z-index: 1;
+    margin-left: 30px;
+  }
+}
+
+/* line 1539, sass/avaluo-styles.sass */
 section.checkout .order {
   position: relative;
   width: 100%;
-  height: 100%;
 }
 
 @media (max-width: 556px) {
-  /* line 1523, sass/avaluo-styles.sass */
+  /* line 1539, sass/avaluo-styles.sass */
   section.checkout .order {
     height: auto;
   }
 }
 
-/* line 1530, sass/avaluo-styles.sass */
+/* line 1545, sass/avaluo-styles.sass */
 section.checkout form .campo {
   width: 100%;
   border-radius: 15px;
@@ -2608,7 +2641,7 @@ section.checkout form .campo {
 }
 
 @media (max-width: 768px) {
-  /* line 1530, sass/avaluo-styles.sass */
+  /* line 1545, sass/avaluo-styles.sass */
   section.checkout form .campo {
     width: 70%;
     height: 50px;
@@ -2618,21 +2651,21 @@ section.checkout form .campo {
 }
 
 @media (max-width: 556px) {
-  /* line 1530, sass/avaluo-styles.sass */
+  /* line 1545, sass/avaluo-styles.sass */
   section.checkout form .campo {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 1544, sass/avaluo-styles.sass */
+/* line 1559, sass/avaluo-styles.sass */
 section.checkout form .campo:focus {
   outline: 0;
   box-shadow: none;
   border: 1px solid red;
 }
 
-/* line 1548, sass/avaluo-styles.sass */
+/* line 1563, sass/avaluo-styles.sass */
 section.checkout form .select {
   margin-bottom: 20px;
   border-radius: 15px;
@@ -2642,7 +2675,7 @@ section.checkout form .select {
 }
 
 @media (max-width: 768px) {
-  /* line 1548, sass/avaluo-styles.sass */
+  /* line 1563, sass/avaluo-styles.sass */
   section.checkout form .select {
     width: 70%;
     height: 50px;
@@ -2652,28 +2685,42 @@ section.checkout form .select {
 }
 
 @media (max-width: 556px) {
-  /* line 1548, sass/avaluo-styles.sass */
+  /* line 1563, sass/avaluo-styles.sass */
   section.checkout form .select {
     width: 100%;
     height: auto;
   }
 }
 
-/* line 1562, sass/avaluo-styles.sass */
+/* line 1577, sass/avaluo-styles.sass */
 section.checkout form .select:focus {
   outline: 0 !important;
   box-shadow: none;
   border: 1px solid red;
 }
 
-/* line 1566, sass/avaluo-styles.sass */
+/* line 1581, sass/avaluo-styles.sass */
 section.checkout form .select option {
   text-align: center;
 }
 
 @media (max-width: 768px) {
-  /* line 1566, sass/avaluo-styles.sass */
+  /* line 1581, sass/avaluo-styles.sass */
   section.checkout form .select option {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 1586, sass/avaluo-styles.sass */
+  section.checkout-info {
+    height: calc(250vh - 100px);
+  }
+}
+
+@media (max-width: 556px) {
+  /* line 1586, sass/avaluo-styles.sass */
+  section.checkout-info {
+    height: 400vh;
   }
 }

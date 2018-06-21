@@ -26,9 +26,9 @@ body
 		nav
 			ul.menu-container
 				li.item-menu
-					a(href="index.html" class="link", onclick="$('[#home]').animatescroll();") Inicio
+						a(href="index.html", class="link-ext") Volver al Inicio
 				li.item-menu
-					a(href="perfil.html", class="link", ) Perfil
+					a(href="perfil.html", class="link-ext",) Perfil
 				li.item-menu
 					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
 		nav.social-media
@@ -53,9 +53,9 @@ body
 			nav
 				ul.menu-container
 					li.item-menu
-						a(href="index.html", class="link") Inicio
+						a(href="index.html", class="link-ext") Volver al Inicio
 					li.item-menu
-						a(href="perfil.html", class="link") Perfil
+						a(href="perfil.html", class="link-ext",) Perfil
 					li.item-menu
 						a(href="#", class="link-ext perfil-link", id="perfil") Ingresar
 					li.item-menu
@@ -94,7 +94,7 @@ body
 							a(href="#" class="facebook-login") INGRESAR CON FACEBOOK
 					a(href="#" class="cerrar") 
 						i(class="far fa-times-circle")
-			section#checkout.checkout.section
+			section#checkout.checkout.checkout-info.section
 				form(action="send" method="post" class="full-height" style="display: block")
 					.row.full-height
 						.col-lg-6

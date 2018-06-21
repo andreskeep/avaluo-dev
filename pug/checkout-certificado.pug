@@ -26,9 +26,9 @@ body
 		nav
 			ul.menu-container
 				li.item-menu
-					a(href="index.html" class="link", onclick="$('[#home]').animatescroll();") Inicio
+						a(href="index.html", class="link-ext") Volver al Inicio
 				li.item-menu
-					a(href="perfil.html", class="link", ) Perfil
+					a(href="perfil.html", class="link-ext",) Perfil
 				li.item-menu
 					a(href="#", class="link", onclick="$('[#contact]').animatescroll();" ) Contácto
 		nav.social-media
@@ -53,9 +53,9 @@ body
 			nav
 				ul.menu-container
 					li.item-menu
-						a(href="index.html", class="link") Inicio
+						a(href="index.html", class="link-ext") Volver al Inicio
 					li.item-menu
-						a(href="perfil.html", class="link") Perfil
+						a(href="perfil.html", class="link-ext",) Perfil
 					li.item-menu
 						a(href="#", class="link-ext perfil-link", id="perfil") Ingresar
 					li.item-menu
@@ -104,7 +104,7 @@ body
 										| Checkout
 										br
 										span Información adicional
-									p.text-center Ubicación
+									p.text-center.datos Ubicación
 									.row(style="margin:10px 0")
 										.col-lg-4
 											select(name="estrato" class="form-control select" placeholder="Estrato")
@@ -132,7 +132,7 @@ body
 											input(type="text" placeholder="Dirección" class="form-control campo")
 										.col-lg-12
 											iframe(src="https://snazzymaps.com/embed/77933" width="100%" height="200px" style="border:none;")
-									p.text-center Completa estos datos para finalizar la compra
+									p.text-center.datos Completa estos datos para finalizar la compra
 									.row(style="margin:10px 0px 0px 0px")
 										.col-lg-4
 											input(type="text" placeholder="Nombre" class="form-control campo")
